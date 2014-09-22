@@ -1,2 +1,2 @@
-LambdaCon.github.io
-===================
+LambdaCon
+=========
