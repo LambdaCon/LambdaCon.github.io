@@ -94,7 +94,10 @@
         $('.fancybox').fancybox();
         
         if (window.CKEDITOR) {
-          CKEDITOR.on("instanceReady", function(event) { $('#cke_17').hide(); });
+          CKEDITOR.on("instanceReady", function(event) {
+              $('#cke_17').hide();
+              $('#cke_1_contents').height('340px');
+          });
           CKEDITOR.replace('description');
         }
     });
