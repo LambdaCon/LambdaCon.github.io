@@ -94,7 +94,7 @@ hr.white { border-color: #F3AE9B; }
 .lanyrd:hover { background: url('../images/icons/lanyrd_blue.png'); }
 .eventbrite { background: url('../images/icons/eventbrite_white.png'); }
 .eventbrite:hover { background: url('../images/icons/eventbrite_blue.png'); }
-.evtsiteico, .evtsiteico:hover { width: 15px; height: 15px; background-repeat: no-repeat; overflow: hidden; }
+.evtsiteico, .evtsiteico:hover { display: inline-block; width: 18px; height: 18px; background-repeat: no-repeat; overflow: hidden; }
 
 .icon { display: inline-block; background-repeat: no-repeat; overflow: hidden; }
 .icon-docs { background: url('../images/icons/icon-docs.png'); width: 90px; height: 90px; margin-right: 15px; }
