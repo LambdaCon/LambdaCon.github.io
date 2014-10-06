@@ -100,5 +100,7 @@
           });
           CKEDITOR.replace('description');
         }
+
+        $('.form-register').validate();
     });
 })();
