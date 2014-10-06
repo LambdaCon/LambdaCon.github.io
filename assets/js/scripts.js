@@ -114,10 +114,19 @@
         $form.validate();
         $form.on('submit', function () {
           event.preventDefault();
-          $form.valid() && $.ajax({
-            type: "POST",
+          if (!$form.valid())
+            return;
+          
+          var email = $form.find('input[type=email]').val();
+          $.ajax({
+            method: "POST",
             url: $form.attr('action'),
-            data: $form.serialize()
+            data: {
+              _replyto: email,
+              _subject: Automatic e-mail,
+              message: $form.serialize()
+            },
+            dataType: "json"
           });
         });
     });
