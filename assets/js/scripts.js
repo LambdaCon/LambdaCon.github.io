@@ -123,7 +123,7 @@
             url: $form.attr('action'),
             data: {
               _replyto: email,
-              _subject: Automatic e-mail,
+              _subject: "Automatic e-mail",
               message: $form.serialize()
             },
             dataType: "json"
