@@ -101,6 +101,12 @@
           CKEDITOR.replace('description');
         }
 
-        $('.form-register').validate();
+		$.validator.addMethod("email", function(value, element) {
+			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+			return this.optional(element) || re.test(value);
+		});
+
+        var $form = $('.form-register');
+        $form && $form.validate();
     });
 })();
