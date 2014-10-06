@@ -101,12 +101,24 @@
           CKEDITOR.replace('description');
         }
 
-		$.validator.addMethod("email", function(value, element) {
-			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
-			return this.optional(element) || re.test(value);
-		});
+        $.validator.addMethod("email", function(value, element) {
+          var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/i;
+          return this.optional(element) || re.test(value);
+        }, 'Invalid e-mail address');
 
         var $form = $('.form-register');
-        $form && $form.validate();
+
+        if (!$form)
+          return;
+
+        $form.validate();
+        $form.on('submit', function () {
+          event.preventDefault();
+          $form.valid() && $.ajax({
+            type: "POST",
+            url: $form.attr('action'),
+            data: $form.serialize()
+          });
+        });
     });
 })();

@@ -382,7 +382,6 @@ hr.white { border-color: #F3AE9B; }
 .form .form-group:after { content: ''; display: block; clear: both; }
 .form .form-group+.form-group { margin-top: -10px; }
 .form-register .form-control { height: 50px; border: 1px solid #d1d8dd; border-radius: 0; box-shadow: 0px 0px 0px transparent; background: #fff; font-size: 17px; font-weight: 300; color:#000 !important; border-left: 3px solid #2da9ff; }
-.form-register .form-control.error { border-left: 3px solid #FF4040; }
 .form .form-group label { text-align: right; line-height: 50px; margin-bottom: 0; font-family:'Roboto', sans-serif; font-weight:300;}
 .form-register { background: #fff; padding: 20px 15px;}
 .form-register ::-webkit-input-placeholder { /* WebKit browsers */ color:#EBEBEB !important; font-family: 'Source Sans Pro', sans-serif;}
@@ -400,7 +399,7 @@ label.error { color: #FF4040; line-height: 0px !important; margin-top:10px; text
 .form-register .form-control:focus {border-color:#2da9ff !important; outline: 1px solid #2da9ff !important;}
 .form-register input[type=file]:focus, .form-register input[type=radio]:focus, .form-register input[type=checkbox]:focus, .form-register input[type=text]:focus, .form-register input[type=email]:focus, .form-register input[type=password]:focus   {  outline: 0px solid #9AADBB !important; }
 input[type=checkbox] {margin: 4px 15px 0 0;-webkit-border-radius: 0;border-radius: 0;-border: 1px solid #d1d8dd;background-color: #fff;width: 19px;height: 19px;cursor: pointer;}
-
+.form-control.error, .form-control:focus.error{ border-color: #FF4040 !important; }
 #sponsorEmail { height: 55px; }
 /* END registration form */
 
