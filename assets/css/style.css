@@ -400,6 +400,8 @@ label.error { color: #FF4040; line-height: 0px !important; margin-top:10px; text
 .form-register .form-control:focus {border-color:#2da9ff !important; outline: 1px solid #2da9ff !important;}
 .form-register input[type=file]:focus, .form-register input[type=radio]:focus, .form-register input[type=checkbox]:focus, .form-register input[type=text]:focus, .form-register input[type=email]:focus, .form-register input[type=password]:focus   {  outline: 0px solid #9AADBB !important; }
 input[type=checkbox] {margin: 4px 15px 0 0;-webkit-border-radius: 0;border-radius: 0;-border: 1px solid #d1d8dd;background-color: #fff;width: 19px;height: 19px;cursor: pointer;}
+
+#sponsorEmail { height: 55px; }
 /* END registration form */
 
 /* START countdown timer */
