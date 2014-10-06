@@ -11,7 +11,6 @@ strong { font-family: 'Roboto', sans-serif; font-weight: 400; font-style: normal
 .hero-big { font-family: 'Ubuntu', sans-serif; }
 
 /* Global & Helper */
-
 body { color: #000; font-size: 11pt; background: #fff; margin: 0; }
 p {font-size:11pt; line-height: 20pt; font-weight:300;}
 h1 { font-size: 112px; }
@@ -117,7 +116,7 @@ hr.white { border-color: #F3AE9B; }
 .article-big p { margin-bottom: 20px; }
 
 /* Content */
-#hero { background: url('../images/header-bg.jpg') center center no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; min-height: 500px; position: relative; overflow:hidden;}
+#hero { background: url('../images/header-bg.jpg') center center no-repeat;-webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; background-attachment: fixed; min-height: 750px; position: relative; overflow:hidden;}
 #hero .container { position: static; }
 #hero .hero-content { position: absolute; top: 25%; left: 0; right: 0; margin-top: -195px; }
 #hero hr { width: 11%; border: 0; border-top: 1px solid #FFF; display: inline-block; }
