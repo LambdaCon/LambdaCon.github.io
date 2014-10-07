@@ -106,6 +106,23 @@
           return this.optional(element) || re.test(value);
         }, 'Invalid e-mail address');
 
+        $.fn.serializeObject = function()
+        {
+          var o = {};
+          var a = this.serializeArray();
+          $.each(a, function() {
+            if (o[this.name] !== undefined) {
+              if (!o[this.name].push)
+                o[this.name] = [o[this.name]];
+              o[this.name].push(this.value || '');
+            }
+            else {
+                o[this.name] = this.value || '';
+            }
+          });
+          return o;
+        };
+
         var $form = $('.form-register');
 
         if (!$form)
@@ -118,15 +135,16 @@
             return;
           
           var email = $form.find('input[type=email]').val();
+          var toSend = $form.serializeObject();
+          toSend._replyto = email;
+          toSend._subject = "Automatic e-mail";
           $.ajax({
             method: "POST",
             url: $form.attr('action'),
-            data: {
-              _replyto: email,
-              _subject: "Automatic e-mail",
-              message: $form.serialize()
-            },
-            dataType: "json"
+            data: toSend,
+            dataType: "json",
+            success: function () { console.log('success'); },
+            error: function () { console.log('error'); }
           });
         });
     });
