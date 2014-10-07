@@ -144,8 +144,12 @@
             url: $form.attr('action'),
             data: toSend,
             dataType: "json",
-            success: function () { $form.parent().find('.alert').hide().end().find('.alert-success').show().fadeOut(3000); },
-            error: function () { $form.parent().find('.alert').hide().end().find('.alert-error').show().fadeOut(3000); }
+            success: function () {
+              $form.parent().find('.alert').hide().end().find('.alert-success').show().fadeOut(4500);
+            },
+            error: function () {
+              $form.parent().find('.alert').hide().end().find('.alert-danger').show().fadeOut(4500);
+            }
           });
         });
     });
