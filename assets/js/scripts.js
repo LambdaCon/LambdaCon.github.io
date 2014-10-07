@@ -128,6 +128,7 @@
         if (!$form)
           return;
 
+        $form.parent().find('.alert').hide();
         $form.validate();
         $form.on('submit', function () {
           event.preventDefault();
@@ -143,8 +144,8 @@
             url: $form.attr('action'),
             data: toSend,
             dataType: "json",
-            success: function () { console.log('success'); },
-            error: function () { console.log('error'); }
+            success: function () { $form.parent().find('.alert').hide().end().find('.alert-success').show().fadeOut(3000); },
+            error: function () { $form.parent().find('.alert').hide().end().find('.alert-error').show().fadeOut(3000); }
           });
         });
     });
