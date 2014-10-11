@@ -134,7 +134,8 @@
           event.preventDefault();
           if (!$form.valid())
             return;
-          
+
+          $form.find('button').attr('disabled', 'disabled');
           var email = $form.find('input[type=email]').val();
           var toSend = $form.serializeObject();
           toSend._replyto = email;
@@ -150,7 +151,9 @@
             error: function () {
               $form.parent().find('.alert').hide().end().find('.alert-danger').show().fadeOut(4500);
             }
-          });
+          }).always(function () {
+             $form.find('button').removeAttr("disabled");
+           });
         });
     });
 })();
