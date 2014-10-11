@@ -152,7 +152,9 @@
               $form.parent().find('.alert').hide().end().find('.alert-danger').show().fadeOut(4500);
             }
           }).always(function () {
-             $form.find('button').removeAttr("disabled");
+             setTimeout(function() {
+               $form.find('button').removeAttr("disabled");
+             }, 3000)
            });
         });
     });
