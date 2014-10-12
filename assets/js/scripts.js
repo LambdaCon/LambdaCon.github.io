@@ -136,10 +136,14 @@
             return;
 
           $form.find('button').attr('disabled', 'disabled');
-          var email = $form.find('input[type=email]').val();
+          
+          for ( instance in CKEDITOR.instances )
+            CKEDITOR.instances[instance].updateElement();
+
           var toSend = $form.serializeObject();
-          toSend._replyto = email;
+          toSend._replyto = $form.find('input[type=email]').val();
           toSend._subject = "Automatic e-mail";
+
           $.ajax({
             method: "POST",
             url: $form.attr('action'),

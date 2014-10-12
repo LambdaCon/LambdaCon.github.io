@@ -89,10 +89,10 @@ hr.white { border-color: #F3AE9B; }
 
 .light .btn { color: #fff; }
 
-.lanyrd { background: url('../images/icons/lanyrd_white.png'); }
-.lanyrd:hover { background: url('../images/icons/lanyrd_blue.png'); }
-.eventbrite { background: url('../images/icons/eventbrite_white.png'); }
-.eventbrite:hover { background: url('../images/icons/eventbrite_blue.png'); }
+.lanyrd { background: url('../images/icons/lanyrd-white.png'); }
+.lanyrd:hover { background: url('../images/icons/lanyrd-blue.png'); }
+.eventbrite { background: url('../images/icons/eventbrite-white.png'); }
+.eventbrite:hover { background: url('../images/icons/eventbrite-blue.png'); }
 .evtsiteico, .evtsiteico:hover { display: inline-block; width: 18px; height: 18px; background-repeat: no-repeat; overflow: hidden; }
 
 .icon { display: inline-block; background-repeat: no-repeat; overflow: hidden; }
@@ -658,29 +658,7 @@ label.error { display: block; }
   left: 46%;
   left: -webkit-calc(50% - 6px);
   left: calc(50% - 6px);
-  /*
-  border-radius: 12px;
-  background-color: #eee;
-  -webkit-transform-origin:  50% 50%;
-      transform-origin:  50% 50% ;
-  -webkit-animation: spinner 1s ease-in-out infinite;
-      animation: spinner 1s ease-in-out infinite;
-  */
 }
-
-/*
-@-webkit-keyframes spinner {
-    0%{-webkit-transform:rotate(0deg);}
-    50%{-webkit-transform:rotate(180deg);}
-    100%{-webkit-transform:rotate(180deg);}
-}
-
-@keyframes spinner {
-    0%{transform:rotate(0deg);}
-    50%{transform:rotate(180deg);}
-    100%{transform:rotate(180deg);}
-}
-*/
 
 /* Mobile device */
 @media (max-width: 480px) {
