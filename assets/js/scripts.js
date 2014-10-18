@@ -150,15 +150,15 @@
             data: toSend,
             dataType: "json",
             success: function () {
-              $form.parent().find('.alert').hide().end().find('.alert-success').show().fadeOut(4500);
+              $form.parent().find('.alert').hide().end().find('.alert-success').show().fadeOut(5000);
             },
             error: function () {
-              $form.parent().find('.alert').hide().end().find('.alert-danger').show().fadeOut(4500);
+              $form.parent().find('.alert').hide().end().find('.alert-danger').show().fadeOut(5000);
             }
           }).always(function () {
              setTimeout(function() {
-               $form.find('button').removeAttr("disabled");
-             }, 3000)
+               location.assign('index.html')
+             }, 3000);
            });
         });
     });
