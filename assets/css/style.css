@@ -216,7 +216,7 @@ hr.white { border-color: #F3AE9B; }
 .buttons li { margin-bottom: 10px; }
 
 .sub-list {list-style:none; padding-left:0; padding-top:5px;}
-.sub-list i {vertical-align: middle; padding-right:25px; color:#2da9ff; font-size: 21px;}
+.sub-list i {vertical-align: middle; padding-right:25px; color:#2da9ff; font-size: 35px;}
 .sub-list li {margin: 15px 0px; font-weight: 300;}
 
 .nav-tabs-default { border: 1px solid #ddd; }

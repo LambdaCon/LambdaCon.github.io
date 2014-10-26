@@ -115,7 +115,7 @@
           <ul class="navigation-bar navigation-bar-left">
             <li class="active"><a href="#about">About</a></li>
             <!--
-              <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#speakers">Speakers</a></li>
               <li><a href="#schedule">Schedule</a></li>
               <li><a href="#stat">Number facts</a></li>
               <li><a href="#price">Prices</a></li>
@@ -146,38 +146,73 @@
         <br />
         <section class="nav-tabs-simple">
           <ul class="nav nav-tabs nav-justified">
-            <!--
-              <li class="active">
-                <a href="#lcTopics" data-toggle="tab"><i class="icon icon-chat-messages-01"></i> Topics</a>
-              </li>
-            -->
             <li class="active">
-              <a href="#lcSessionTypes" data-toggle="tab"><i class="icon icon-education-science-11"></i> Session types</a>
+              <a href="#lcTopics" data-toggle="tab"><i class="icon icon-text-hierarchy-04"></i> Topics</a>
             </li>
             <li>
-              <a href="#lcCounters" data-toggle="tab"><i class="icon icon-documents-bookmarks-12"></i> About us</a>
+              <a href="#lcSessionTypes" data-toggle="tab"><i class="icon icon-chat-messages-01"></i> Session types</a>
+            </li>
+            <li>
+              <a href="#lcCounters" data-toggle="tab"><i class="icon icon-faces-users-04"></i> About us</a>
             </li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane fade" id="lcTopics">
+            <div class="tab-pane fade in active" id="lcTopics">
               <article class="row">
-                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInLeft" data-delay="500">
-                  <img class="img-responsive" src="assets/images/about/t3-lab.jpg" alt="Topic cloud" />
+                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInLeft" data-delay="300">
+                  <img class="img-responsive" src="assets/images/about/fp-languages-cloud.png" alt="FP languages cloud" />
                 </div>
-                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="500">
-                  <h6>Topics</h6>
-                  <p>A wide range of topics in functional programming</p>
+                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="300">
+                  <h6><span class="highlight">LambdaCon</span> subjects</h6>
+                  <p>
+                    <div>
+                      Sessions will show how to leverage the power of functional programming languages such as Scala, Haskell, Clojure, Erlang, F#...
+                    </div>
+                    <div>
+                      Nonetheless the conference aims to instill the functional mindset in attendees so that they can use it as a tool even when programming with an object oriented language
+                    </div>
+                  </p>
+                  <p>
+                    Attendees will learn basic and advanced concepts and how to use FP in their everyday life
+                  </p>
                   <ul class="sub-list">
-                    <li><i class="icon icon-documents-bookmarks-16"></i> Lorem ipsum dolor sit atmet</li>
-                    <li><i class="icon icon-documents-bookmarks-11"></i> Lorem ipsum dolor sit atmet</li>
-                    <li><i class="icon icon-documents-bookmarks-10"></i> Lorem ipsum dolor sit atmet</li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <i class="icon icon-education-science-13"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          immutability, higher order functions, currying, continuation-passing, pattern matching, monads
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <i class="icon icon-education-science-15"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          DSLs, domain modeling, actor model, machine learning
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="row">
+                        <div class="col-xs-2">
+                          <i class="icon icon-education-science-09"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          multithreading, non-blocking IO, message passing, message queues, microservices, HTTP-based APIs, web applications, high availability, continuous delivery
+                        </div>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </article>
             </div>
-            <div class="tab-pane fade in active" id="lcSessionTypes">
+            <div class="tab-pane fade" id="lcSessionTypes">
               <article class="row">
-                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInLeft" data-delay="500">
+                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInLeft" data-delay="300">
                   <h6>Conference structure</h6>
                   <p>
                     The program runs across multiple tracks
@@ -200,17 +235,17 @@
                     speaker and experimenting
                   </p>
                 </div>
-                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInRight" data-delay="500">
-                  <img class="img-responsive" src="assets/images/about/t3-lab.jpg" alt="Conference room" />
+                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInRight" data-delay="300">
+                  <img class="img-responsive" src="assets/images/about/conference-room.jpg" alt="Conference room" />
                 </div>
               </article>
             </div>
             <div class="tab-pane fade" id="lcCounters">
               <article class="row">
-                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInLeft" data-delay="500">
-                  <img class="img-responsive" src="assets/images/about/about-us.jpg" alt="People network" />
+                <div class="col-md-5 col-sm-5 animated hiding" data-animation="fadeInLeft" data-delay="300">
+                  <img class="img-responsive" src="assets/images/about/people-network.jpg" alt="People network" />
                 </div>
-                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="500">
+                <div class="col-md-6 col-sm-6 text-left animated hiding" data-animation="fadeInRight" data-delay="300">
                   <h6>Learn more on <span class="highlight">LambdaCon</span></h6>
                   <p>A conference for people eager to know more about <span class="highlight">functional programming</span>, combining talks with hands-on sessions to take your skills to the <span class="highlight">next level</span></p>
                   <p>LambdaCon is focused on learning the functional approach, understanding in which scenarios it is better to use FP, discovering what can be done with current languages and technologies and exploring current best practices</p>
