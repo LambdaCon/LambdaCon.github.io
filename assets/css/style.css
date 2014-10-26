@@ -494,7 +494,7 @@ label.error { display: block; }
 #schedule .panel .panel-title a .fa.fa-angle-down { display: none; }
 #schedule .panel .panel-title a .fa.fa-angle-up { display: block; }
 
-#speakers { background-image: url('../images/sound-wave.jpg'); background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#speakers { background-image: url('../images/speakers/sound-wave.jpg'); background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 #speakers .speaker-item { padding-bottom: 50px; }
 #speakers .img-wrapper { text-align: center; }
 #speakers .img-wrapper img { margin: 0 auto; }
