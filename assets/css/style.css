@@ -495,7 +495,7 @@ label.error { display: block; }
 #schedule .panel .panel-title a .fa.fa-angle-up { display: block; }
 
 #speakers { background-image: url('../images/speakers/sound-wave.jpg'); background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-#speakers .speaker-item { padding-bottom: 50px; }
+#speakers .item { padding-bottom: 50px; }
 #speakers .img-wrapper { text-align: center; }
 #speakers .img-wrapper img { margin: 0 auto; }
 #speakers .name { font-size: 25px; margin: 10px 0 2px; }
@@ -510,6 +510,23 @@ label.error { display: block; }
   height: 31px;
   font-size: 18px; }
 #speakers .social-link a:Hover { opacity: 1; color:#2da9ff; border-color:#2da9ff; }
+
+#organizers { background-image: url('../images/organizers/brain-wave.jpg'); background-repeat: no-repeat; background-position: center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#organizers .item { padding-bottom: 50px; }
+#organizers .img-wrapper { text-align: center; }
+#organizers .img-wrapper img { margin: 0 auto; }
+#organizers .name { font-size: 25px; margin: 10px 0 2px; }
+#organizers .sub { font-size: 18px; color: #2da9ff; margin: 0 0 15px; }
+#organizers p { padding: 0 20px; margin-bottom: 15px; opacity: 0.7; }
+#organizers .social-link a {
+  opacity: .3;
+  color: #fff;
+  padding: 2px 5px;
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  font-size: 18px; }
+#organizers .social-link a:Hover { opacity: 1; color:#2da9ff; border-color:#2da9ff; }
 
 .pricing-cols { margin-top: 30px; width: 100%; display: inline-block; border-collapse: collapse; margin-bottom: -20px; }
 .pricing-col {
