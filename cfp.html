@@ -116,13 +116,25 @@
                     <div class="form-group">
                       <label for="language" class="col-sm-3 col-xs-12 control-label">Programming language</label>
                       <div class="col-sm-9 col-xs-12">
-                        <input type="text" class="form-control" name="progrlanguage" id="progrlanguage" placeholder="The programming language the session relies on"></input>
+                        <input type="text" class="form-control" name="language" id="language" placeholder="The programming language the session relies on"></input>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="resume" class="col-sm-3 col-xs-12 control-label">Abstract</label>
+                      <label for="stitle" class="col-sm-3 col-xs-12 control-label">Title</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" name="stitle" id="stitle" placeholder="The title that will be shown on the schedule"></input>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="sdescription" class="col-sm-3 col-xs-12 control-label">Description</label>
+                      <div class="col-sm-9 col-xs-12">
+                        <input type="text" class="form-control" name="sdescription" id="sdescription" placeholder="The description that will be shown on the schedule"></input>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="abstract" class="col-sm-3 col-xs-12 control-label">Abstract</label>
                       <div class="col-sm-9">
-                        <textarea name="description" id="description" rows="100" cols="90">
+                        <textarea name="abstract" id="abstract" rows="100" cols="90">
                           <p>
                             <strong>Goal</strong><br />
                             Explain in one paragraph what an attendee will learn during your presentation</p>
@@ -131,12 +143,14 @@
                             Explain in detail how your presentation will be structured
                           </p>
                           <p>
-                            <strong>Pre-Requisites</strong><br />
-                            Hardware, OS and software requirements to actively participate in your session
+                            <strong>Prerequisites</strong><br />
+                            Hardware, OS and software requirements to actively participate in your session<br />
+                            N/A if nothing is required to attend your session
                           </p>
                           <p>
                             <strong>Material</strong><br />
-                            Supporting material which you will provide before the conference and that we will distribute to participants (PDF files or code files)
+                            Supporting material which you will provide before the conference and that we will distribute to participants (PDF files or code files)<br />
+                            N/A if nothing is required to attend your session (the material shown during your session will be provided after the conference)
                           </p>
                           <p>
                             <strong>References</strong><br />
