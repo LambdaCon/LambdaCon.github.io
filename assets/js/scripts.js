@@ -98,7 +98,7 @@
               $('#cke_17').hide();
               $('#cke_1_contents').height('340px');
           });
-          CKEDITOR.replace('description');
+          CKEDITOR.replace('abstract');
         }
 
         $.validator.addMethod("email", function(value, element) {
