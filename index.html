@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/font-lineicons.css" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/flexslider.css" id="flexslider" type="text/css" media="all" />
     <link rel="stylesheet" href="assets/css/style.css" id="mainstyle" type="text/css" media="all" />
 
     <!--[if lt IE 9]>
@@ -96,6 +97,10 @@
               <img src="assets/images/logo-white.png" alt="LambdaCon logo" />
             </div>
             <a href="http://lambdacon.eventbrite.com/?aff=site" class="btn btn-sm btn-default"><i class="fa fa-ticket"></i> <span>Get tickets</span></a>
+            <!--
+            &nbsp;
+            <a href="cfp.html" class="btn btn-lg btn-3d"><i class="fa fa-newspaper-o fa-2x"></i> <span>Call for papers</span></a>
+            -->
           </div>
         </div>
       </div>
@@ -119,13 +124,18 @@
               <li><a href="#price">Prices</a></li>
             -->
             <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#organizers">Staff</a></li>
+            <li><a href="#staff">Staff</a></li>
             <!--
               <li><a href="#contacts">Contacts</a></li>
             -->
             <li class="featured">
               <a href="http://lambdacon.eventbrite.com/?aff=site"><i class="fa fa-ticket"></i>Get tickets</a>
             </li>
+            <!--
+            <li class="featured">
+              <a href="cfp.html"><i class="fa fa-newspaper-o"></i>Call for papers</a>
+            </li>
+            -->
           </ul>
         </nav>
       </div>
@@ -309,50 +319,511 @@
         <div class="sub-title">Shortest way to explore what will happen on LambdaCon</div>
         <br />
         <br />
-        <section class="nav-tabs-default hidden-xs">
-          <!--
+        <section class="nav-tabs-default">
           <ul class="nav nav-tabs">
-            <li class="active"><a href="#TrackOne" data-toggle="tab">
-              <div class="title">Track 1</div>
-              <div class="subtitle">Room A</div>
-            </a></li>
-            <li><a href="#TrackTwo" data-toggle="tab">
-              <div class="title">Track 2</div>
-              <div class="subtitle">Room B</div>
-            </a></li>
+            <li class="active">
+              <a href="#keynotes" data-toggle="tab">
+                <div class="title">Keynotes</div>
+                <div class="subtitle">Category hall</div>
+              </a>
+            </li>
+            <li>
+              <a href="#talks" data-toggle="tab">
+                <div class="title">Talks</div>
+                <div class="subtitle">&nbsp;</div>
+              </a>
+            </li>
+            <li>
+              <a href="#workshops" data-toggle="tab">
+                <div class="title">Workshops</div>
+                <div class="subtitle">Monad hall</div>
+              </a>
+            </li>
           </ul>
-          -->
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="TrackOne">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#TrackOne-1" data-toggle="tab">Morning</a></li>
-                <li><a href="#TrackOne-2" data-toggle="tab">Afternoon</a></li>
-              </ul>
+            <div class="tab-pane fade in active" id="keynotes">
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="TrackOne-1">
-                  <article>
-                    <p>No schedule yet</p>
-                  </article>
-                </div>
-                <div class="tab-pane fade" id="TrackOne-2">
-                  <article>
-                    <p>No schedule yet</p>
-                  </article>
+                <div class="tab-pane fade in active" id="keynoteOnlyTrack">
+                  <div class="panel-group timeline-schedule">
+                    <div class="panel panel-default" id="welcomeKeynote">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/staff/vlad-saftoiu.jpg" class="img-responsive img-circle" alt="Vlad Saftoiu" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#welcomeKeynote" href="#welcomeKeynoteItem">
+                            Welcome keynote
+                          </a>
+                        </div>
+                      </div>
+                      <div id="welcomeKeynoteItem" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p class="author"><a href="#staff"><strong><i class="fa fa-user"></i>Vlad Saftoiu</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="openingKeynote">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/bartosz-milewski.jpg" class="img-responsive img-circle" alt="Bartosz Milewski" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#openingKeynote" href="#openingKeynoteItem">
+                            Opening keynote - Fun with categories
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="openingKeynoteItem" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              A category is an embarrassingly simple yet powerful concept.
+                              It's behind Unix pipes, simple arithmetic, programming types, functions, state and side effects.
+                              I will show you how categories can be used to design generic C++ libraries.
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Bartosz Milewski</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="closingKeynote">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/staff/luigi-berrettini.jpg" class="img-responsive img-circle" alt="Luigi Berrettini" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#closingKeynote" href="#closingKeynoteItem">
+                            Closing keynote
+                          </a>
+                        </div>
+                      </div>
+                      <div id="closingKeynoteItem" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p class="author"><a href="#staff"><strong><i class="fa fa-user"></i>Luigi Berrettini</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="TrackTwo">
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#TrackTwo-1" data-toggle="tab">Morning</a></li>
-                <li><a href="#TrackTwo-2" data-toggle="tab">Afternoon</a></li>
-              </ul>
+            <div class="tab-pane fade talks-tab-pane" id="talks">
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="TrackTwo-1">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#talksTrack1" data-toggle="tab">Currying hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack2" data-toggle="tab">Closure hall</a>
+                  </li>
+                  <!--
+                  <li>
+                    <a href="#talksTrack3" data-toggle="tab">Functor hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack4" data-toggle="tab">Immutability hall</a>
+                  </li>
+                  -->
+                </ul>
+                <div class="tab-pane fade in active" id="talksTrack1" >
+                  <div class="panel-group timeline-schedule" id="talksTrack1">
+                    <div class="panel panel-default" id="talksTrack1Session1">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/tomek-borek.jpg" class="img-responsive img-circle" alt="Tomek Borek" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session1Item">
+                            Why bother with FP?
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                Instead of just bashing other paradigms I'll provide real arguments for FP, backed.
+                              </div>
+                              <div>
+                                I’ll talk about:
+                              </div>
+                              <ul>
+                                <li>complexity, accidental and essential</li>
+                                <li>state manipulation / mutation</li>
+                                <li>pure OOP model (Smalltalk, though model is quite language agnostic)</li>
+                              </ul>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Tomek Borek</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack1Session2">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/yan-cui.jpg" class="img-responsive img-circle" alt="Yan Cui" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session2Item" class="collapsed">
+                            F# in the real world
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                F# is an incredibly versatile and expressive language and enables
+                                you to solve a wide array of problems succinctly and efficiently.
+                              </div>
+                              <div>
+                                This talk illustrates, with real-world examples, how the Gamesys social
+                                team is using F# to build the backend services that support around 1
+                                million Daily Active Users (DAU) and 250 million daily requests across
+                                its social games on both mobile and web platforms.
+                              </div>
+                              <div>
+                                Talk objectives:
+                              </div>
+                              <ul>
+                                <li>
+                                  Demonstrate the use of F# to write clean, concise game logic as well as infrastructure
+                                  code, the same techniques and concepts can be easily applied to other domains
+                                </li>
+                                <li>
+                                  Demonstrate how F# can help tackle recurring business problems such as efficiency,
+                                  correctness, complexity and time to market
+                                </li>
+                              </ul>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Yan Cui</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack1Session3">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/alfredo-di-napoli.jpg" class="img-responsive img-circle" alt="Alfredo Di Napoli" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session3Item" class="collapsed">
+                            Using Haskell professionally
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session3Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                Studying FP during free time is a lot of fun, but most people are reluctant in making an effort learning
+                                a functional language because they think it would be impractical to use in the everyday job industry.
+                              </div>
+                              <div>
+                                This talk is going to show that not only is it possible to use Haskell to earn a living, but that the benefits
+                                from immutability, purity and conciseness that Haskell offers are the perfect ingredients to make a business succeeds.
+                              </div>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Alfredo Di Napoli</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack1Session4">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/marek-kubica.jpg" class="img-responsive img-circle" alt="Marek Kubica" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session4Item" class="collapsed">
+                            From imperative to functional APIs
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session4Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                Libraries and APIs often shape how our program looks like. Unfortunately, we often have to deal with
+                                imperfect libraries that have a brittle API, partly due to a lack of care, partly to language restrictions.
+                              </div>
+                              <div>
+                                In this talk we will explore how we can use features of OCaml, a functional
+                                programming language, to improve an interface provided by a C library.
+                              </div>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Marek Kubica</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack1Session5">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/jan-stępień.jpg" class="img-responsive img-circle" alt="Jan Stępień" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session5Item" class="collapsed">
+                            Clojure redeployed
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session5Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                At stylefruits we've been using Clojure on production since late 2012.
+                                We've made a lot of mistakes and we've learned a lot.
+                              </div>
+                              <div>
+                                This talk is dedicated to the newest addition to our infrastructure:
+                                a Clojure REST-inspired API.
+                              </div>
+                              <div>
+                                Taught by our previous mistakes in the realm of deployment and scalability
+                                we've set our requirements high: we're aiming for continuous delivery, high
+                                availability, dynamic scaling and pauseless deployments under load.
+                              </div>
+                              <div>
+                                Aside from deployment matters, Clojure proves to be an excellent choice to
+                                build a modular and stateless service.
+                              </div>
+                              <div>
+                                In this talk we're going to share our experiences, both good and bad, gained
+                                while prototyping, deploying and maintaining our newest project.
+                              </div>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <!--
+                    <div class="panel panel-default" id="talksTrack1Session6">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session6Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack1Session6Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    -->
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="talksTrack2">
                   <article>
                     <p>No schedule yet</p>
                   </article>
+                  <!--
+                  <div class="panel-group timeline-schedule" id="talksTrack2">
+                    <div class="panel panel-default" id="talksTrack2Session1">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session1Item">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack2Session2">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session2Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack2Session3">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session3Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session3Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack2Session4">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session4Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session4Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack2Session5">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session5Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session5Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack2Session6">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack2" href="#talksTrack2Session6Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack2Session6Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  -->
                 </div>
-                <div class="tab-pane fade" id="TrackTwo-2">
+                <div class="tab-pane fade" id="talksTrack3">
+                </div>
+                <div class="tab-pane fade" id="talksTrack4">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade outer-tab-pane" id="workshops">
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="workshopsOnlytrack">
                   <article>
                     <p>No schedule yet</p>
                   </article>
@@ -369,8 +840,9 @@
       </div>
     </section>
 
-    <section id="speakers" class="section light">
+    <section id="speakers" class="section light carousel slide" data-ride="carousel" data-interval="false">
       <div class="overlay"></div>
+
       <div class="container">
         <div class="icon-wrap"><span class="icon icon-active icon-multimedia-12"></span></div>
         <h3>Speakers</h3>
@@ -378,79 +850,112 @@
         <br />
         <br />
         <section class="row">
-          <div class="col-md-4 col-sm-4 col-xs-6"></div>
-          <div class="col-md-4 col-sm-4 col-xs-6">
-            <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
-              <div class="img-wrapper">
-                <img src="assets/images/speakers/bartosz-milewski.jpg" class="img-responsive img-circle" alt="speaker-1" />
-              </div>
-              <div class="name">Bartosz Milewski</div>
-              <div class="sub">CEO <a href="http://relisoft.com">Reliable Software LLC</a></div>
-              <p class="small">
-                Bartosz started as a quantum physicist, joined Microsoft to build the search engine for Windows and became an avid proponent of OOP
-                <br />
-                Then he got into concurrency and parallelism and now he’s evangelizing FP and writing the book Category theory for programmers
-              </p>
-              <div class="social-link">
-                <a href="http://twitter.com/BartoszMilewski"><span class="fa fa-twitter"></span></a>
-                <a href="http://www.linkedin.com/in/drbartosz"><span class="fa fa-linkedin"></span></a>
-                <a href="http://www.facebook.com/bartosz.milewski"><span class="fa fa-facebook"></span></a>
-                <a href="http://bartoszmilewski.com"><span class="fa fa-globe"></span></a>
-              </div>
+          <div class="carousel">
+            <div class="flexslider">
+              <ul class="slides">
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/bartosz-milewski.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Bartosz Milewski</div>
+                  <div class="sub">CEO - <a href="http://relisoft.com">Reliable Software</a></div>
+                  <p class="small">
+                    Bartosz started as a quantum physicist, joined Microsoft to build the search engine for Windows and became an avid proponent of OOP
+                    <br />
+                    Then he got into concurrency and parallelism and now he’s evangelizing FP and writing the book Category theory for programmers
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/BartoszMilewski"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/drbartosz"><span class="fa fa-linkedin"></span></a>
+                    <a href="http://www.facebook.com/bartosz.milewski"><span class="fa fa-facebook"></span></a>
+                    <a href="http://bartoszmilewski.com"><span class="fa fa-globe"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/jan-stępień.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Jan Stępień</div>
+                  <div class="sub">Developer - <a href="http://www.stylefruits.de">Stylefruits</a></div>
+                  <p class="small">
+                    Jan is a backend developer at stylefruits GmbH. He runs half marathons and likes to wander in snowy Alpine wilderness.
+                    <br />
+                    He got a M. Eng. in CS at Warsaw University of Technology and he is easily confused by the assignment operator
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/janstepien"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/janstepien"><span class="fa fa-linkedin"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/yan-cui.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Yan Cui</div>
+                  <div class="sub">Senior developer - <a href="http://www.gamesyscorporate.com">GameSys</a></div>
+                  <p class="small">
+                    Yan develops scalable backend services for Gamesys's social games on mobile and Facebook.
+                    <br />
+                    He is co-author of the book F# Deep Dives, a regular speaker on topics such as AOP, F# and NoSQL
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/theburningmonk"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/theburningmonk"><span class="fa fa-linkedin"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/marek-kubica.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Marek Kubica</div>
+                  <div class="sub">Student - <a href="http://www.tum.de">Technische Universität München</a></div>
+                  <p class="small">
+                    Programming language polyglot and explorer, Marek likes showing people awesome technologies.
+                    <br />
+                    He believes in free software and in the culture of sharing. When not staring at a screen, he can be met on his beloved road bike.
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/leonidasfromxiv"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/mkubica"><span class="fa fa-linkedin"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/alfredo-di-napoli.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Alfredo Di Napoli</div>
+                  <div class="sub">Developer - <a href="http://www.irisconnect.co.uk">IRIS Connect</a></div>
+                  <p class="small">
+                    Alfredo is an enthusiastic programmer who tries to find the most elegant solution for the problem at hand.
+                    <br />
+                    He likes to define himself a beauty-driven developer. Robert C. Martin's Clean Code is his bible, functional languages his inspiration.
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/alfredodinapoli"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/alfredodn"><span class="fa fa-linkedin"></span></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-wrapper">
+                    <img src="assets/images/speakers/tomek-borek.jpg" class="img-responsive img-circle" alt="speaker-1" />
+                  </div>
+                  <div class="name">Tomek Borek</div>
+                  <div class="sub">IAAS Engineer - <a href="http://www.lumesse.com">Lumesse</a></div>
+                  <p class="small">
+                    Tomek works in the core architecture team, a SAAS solution for recruitment.
+                    <br />
+                    He co-leads Lambda Lounge Kraków, Software Craftsmanship Kraków, and Polish JUG.
+                    He co-organizes GeeCON conference and has spoken at many conferences and lesser events
+                  </p>
+                  <div class="social-link">
+                    <a href="http://twitter.com/LAFK_pl"><span class="fa fa-twitter"></span></a>
+                    <a href="http://www.linkedin.com/in/tjborek"><span class="fa fa-linkedin"></span></a>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-4 col-sm-4 col-xs-6"></div>
-          <!--
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="item animated hiding" data-animation="fadeInUp" data-delay="500">
-              <div class="img-wrapper">
-              </div>
-              <div class="name"></div>
-              <div class="sub"></div>
-              <p class="small"></p>
-              <div class="social-link">
-                <a href="#"><span class="fa fa-facebook"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-google-plus"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="clearfix visible-xs"></div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="item animated hiding" data-animation="fadeInUp" data-delay="500">
-              <div class="img-wrapper">
-              </div>
-              <div class="name"></div>
-              <div class="sub"></div>
-              <p class="small"></p>
-              <div class="social-link">
-                <a href="#"><span class="fa fa-facebook"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-google-plus"></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 col-xs-6">
-            <div class="item animated hiding" data-animation="fadeInUp" data-delay="500">
-              <div class="img-wrapper">
-              </div>
-              <div class="name"></div>
-              <div class="sub"></div>
-              <p class="small"></p>
-              <div class="social-link">
-                <a href="#"><span class="fa fa-facebook"></span></a>
-                <a href="#"><span class="fa fa-twitter"></span></a>
-                <a href="#"><span class="fa fa-google-plus"></span></a>
-              </div>
-            </div>
-          </div>
-          -->
         </section>
-        <!--
-        <div class="btn-wrapper">
-          <a href="#" class="btn btn-sm btn-default">See all speakers</a>
-        </div>
-        -->
       </div>
     </section>
 
@@ -470,27 +975,32 @@
           <ul class="list-inline">
             <li>
               <a href="#" target="_blank">
-                <img src="assets/images/sponsors/coders-tug.png" alt="Coders TUG" />
+                <img src="assets/images/sponsors/coders-tug.png" title="Coders TUG" alt="Coders TUG" />
               </a>
             </li>
             <li>
               <a href="http://fpdays.net/2014/" target="_blank">
-                <img src="assets/images/sponsors/fp-days.png" alt="FP Days" />
+                <img src="assets/images/sponsors/fp-days.png" title="FP Days" alt="FP Days" />
               </a>
             </li>
             <li>
               <a href="http://www.t3lab.it" target="_blank">
-                <img src="assets/images/sponsors/t3-lab.png" alt="T3LAB | Technology Transfer Team" />
+                <img src="assets/images/sponsors/t3-lab.png" title="T3LAB | Technology Transfer Team" alt="T3LAB | Technology Transfer Team" />
               </a>
             </li>
             <li>
               <a href="http://www.biodec.com" target="_blank">
-                <img src="assets/images/sponsors/biodec.png" alt="BioDec" />
+                <img src="assets/images/sponsors/biodec.png" title="BioDec" alt="BioDec" />
               </a>
             </li>
             <li>
               <a href="http://www.cosenonjaviste.it" target="_blank">
-                <img src="assets/images/sponsors/cose-non-javiste.png" alt="Cose Non Javiste" />
+                <img src="assets/images/sponsors/cose-non-javiste.png" title="Cose Non Javiste" alt="Cose Non Javiste" />
+              </a>
+            </li>
+            <li>
+              <a href="http://www.meetup.com/Lambda-Lounge-Krakow" target="_blank">
+                <img src="assets/images/sponsors/lambda-lounge-kraków.png" title="Lambda Lounge Kraków" alt="Lambda Lounge Kraków" />
               </a>
             </li>
           </ul>
@@ -520,7 +1030,7 @@
       </div>
     </section>
 
-    <section id="organizers" class="section light">
+    <section id="staff" class="section light">
       <div class="overlay"></div>
       <div class="container">
         <div class="icon-wrap"><span class="icon icon-active icon-education-science-10"></span></div>
@@ -532,7 +1042,7 @@
           <div class="col-md-2 col-sm-2 col-xs-6 col-md-offset-1">
             <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/images/organizers/massimiliano-atzori.jpg" class="img-responsive img-circle" alt="Massimiliano Atzori" />
+                <img src="assets/images/staff/massimiliano-atzori.jpg" class="img-responsive img-circle" alt="Massimiliano Atzori" />
               </div>
               <div class="name">Massimiliano Atzori</div>
               <div class="sub"></div>
@@ -546,7 +1056,7 @@
           <div class="col-md-2 col-sm-2 col-xs-6">
             <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/images/organizers/matteo-baglini.jpg" class="img-responsive img-circle" alt="Matteo Baglini" />
+                <img src="assets/images/staff/matteo-baglini.jpg" class="img-responsive img-circle" alt="Matteo Baglini" />
               </div>
               <div class="name">Matteo Baglini</div>
               <div class="sub"></div>
@@ -560,7 +1070,7 @@
           <div class="col-md-2 col-sm-2 col-xs-6">
             <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/images/organizers/luigi-berrettini.jpg" class="img-responsive img-circle" alt="Luigi Berrettini" />
+                <img src="assets/images/staff/luigi-berrettini.jpg" class="img-responsive img-circle" alt="Luigi Berrettini" />
               </div>
               <div class="name">Luigi Berrettini</div>
               <div class="sub"></div>
@@ -574,7 +1084,7 @@
           <div class="col-md-2 col-sm-2 col-xs-6">
             <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/images/organizers/gianluca-padovani.jpg" class="img-responsive img-circle" alt="Gianluca Padovani" />
+                <img src="assets/images/staff/gianluca-padovani.jpg" class="img-responsive img-circle" alt="Gianluca Padovani" />
               </div>
               <div class="name">Gianluca Padovani</div>
               <div class="sub"></div>
@@ -588,7 +1098,7 @@
           <div class="col-md-2 col-sm-2 col-xs-6">
             <div class="item animated hiding" data-animation="fadeInUp" data-delay="0">
               <div class="img-wrapper">
-                <img src="assets/images/organizers/vlad-saftoiu.jpg" class="img-responsive img-circle" alt="Vlad Saftoiu" />
+                <img src="assets/images/staff/vlad-saftoiu.jpg" class="img-responsive img-circle" alt="Vlad Saftoiu" />
               </div>
               <div class="name">Vlad Saftoiu</div>
               <div class="sub"></div>
@@ -620,6 +1130,10 @@
     <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
     <script type="text/javascript" src="assets/js/waypoints-sticky.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.flexslider.manualDirectionControls.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>
+
   </body>
 </html>

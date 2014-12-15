@@ -29,6 +29,22 @@
             app.fn.screenSize();
         });
 
+        var flexSlider = $('.flexslider').flexslider({
+          animation: "slide",
+          animationLoop: false,
+          itemWidth: 300,
+          itemMargin: 5,
+          minItems: 2,
+          maxItems: 4,
+          controlNav: false,
+          directionNav: true,
+          prevText: "",
+          nextText: "",
+          controlsContainer: "#speakers"
+        });
+
+        flexSlider.data('flexslider').pause();
+        
         // fade in .back-to-top
         $(window).scroll(function () {
             if ($(this).scrollTop() > 500) {
@@ -92,7 +108,7 @@
         });
 
         $('.fancybox').fancybox();
-        
+
         if (window.CKEDITOR) {
           CKEDITOR.on("instanceReady", function(event) {
               $('#cke_17').hide();
@@ -136,7 +152,7 @@
             return;
 
           $form.find('button').attr('disabled', 'disabled');
-          
+
           for ( instance in CKEDITOR.instances )
             CKEDITOR.instances[instance].updateElement();
 
