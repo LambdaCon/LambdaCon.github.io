@@ -40,7 +40,8 @@
           directionNav: true,
           prevText: "",
           nextText: "",
-          controlsContainer: "#speakers"
+          controlsContainer: "#speakers",
+          useCSS: false
         });
 
         flexSlider.data('flexslider').pause();
