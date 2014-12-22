@@ -154,8 +154,10 @@
 
           $form.find('button').attr('disabled', 'disabled');
 
-          for ( instance in CKEDITOR.instances )
-            CKEDITOR.instances[instance].updateElement();
+          if (window.CKEDITOR) {
+            for (instance in CKEDITOR.instances )
+              CKEDITOR.instances[instance].updateElement();
+          }
 
           var toSend = $form.serializeObject();
           toSend._replyto = $form.find('input[type=email]').val();
