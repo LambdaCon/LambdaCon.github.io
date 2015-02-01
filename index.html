@@ -325,12 +325,6 @@
         <section class="nav-tabs-default">
           <ul class="nav nav-tabs">
             <li class="active">
-              <a href="#keynotes" data-toggle="tab">
-                <div class="title">Keynotes</div>
-                <div class="subtitle">Category hall</div>
-              </a>
-            </li>
-            <li>
               <a href="#talks" data-toggle="tab">
                 <div class="title">Talks</div>
                 <div class="subtitle">&nbsp;</div>
@@ -339,15 +333,32 @@
             <li>
               <a href="#workshops" data-toggle="tab">
                 <div class="title">Workshops</div>
-                <div class="subtitle">Morphisms hall</div>
+                <div class="subtitle">Closure hall</div>
               </a>
             </li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane fade in active" id="keynotes">
+            <div class="tab-pane fade in active talks-tab-pane" id="talks">
               <div class="tab-content">
-                <div class="tab-pane fade in active" id="keynoteOnlyTrack">
-                  <div class="panel-group timeline-schedule">
+                <ul class="nav nav-tabs">
+                  <li class="active">
+                    <a href="#talksTrack1" data-toggle="tab">Currying hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack2" data-toggle="tab">Immutability hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack3" data-toggle="tab">Functor hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack4" data-toggle="tab">Applicative hall</a>
+                  </li>
+                  <li>
+                    <a href="#talksTrack5" data-toggle="tab">Monad hall</a>
+                  </li>
+                </ul>
+                <div class="tab-pane fade in active" id="talksTrack1" >
+                  <div class="panel-group timeline-schedule" id="talksTrack1">
                     <div class="panel panel-default" id="welcomeKeynote">
                       <div class="speaker-wrapper">
                         <img src="assets/images/staff/vlad-saftoiu.jpg" class="img-responsive img-circle" alt="Vlad Saftoiu" />
@@ -375,7 +386,7 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
-                          <a data-toggle="collapse" data-parent="#openingKeynote" href="#openingKeynoteItem">
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#openingKeynoteItem">
                             Opening keynote - Fun with categories
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
@@ -395,50 +406,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default" id="closingKeynote">
-                      <div class="speaker-wrapper">
-                        <img src="assets/images/staff/luigi-berrettini.jpg" class="img-responsive img-circle" alt="Luigi Berrettini" />
-                      </div>
-                      <div class="panel-heading">
-                        <div class="panel-title">
-                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
-                          <a data-toggle="collapse" data-parent="#closingKeynote" href="#closingKeynoteItem">
-                            Closing keynote
-                          </a>
-                        </div>
-                      </div>
-                      <div id="closingKeynoteItem" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                          <article>
-                            <p class="author"><a href="#staff"><strong><i class="fa fa-user"></i>Luigi Berrettini</strong></a></p>
-                          </article>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="tab-pane fade talks-tab-pane" id="talks">
-              <div class="tab-content">
-                <ul class="nav nav-tabs">
-                  <li class="active">
-                    <a href="#talksTrack1" data-toggle="tab">Currying hall</a>
-                  </li>
-                  <li>
-                    <a href="#talksTrack2" data-toggle="tab">Closure hall</a>
-                  </li>
-                  <!--
-                  <li>
-                    <a href="#talksTrack3" data-toggle="tab">Functor hall</a>
-                  </li>
-                  <li>
-                    <a href="#talksTrack4" data-toggle="tab">Immutability hall</a>
-                  </li>
-                  -->
-                </ul>
-                <div class="tab-pane fade in active" id="talksTrack1" >
-                  <div class="panel-group timeline-schedule" id="talksTrack1">
                     <div class="panel panel-default" id="talksTrack1Session1">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/tomek-borek.jpg" class="img-responsive img-circle" alt="Tomek Borek" />
@@ -446,14 +413,14 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
-                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session1Item">
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#talksTrack1Session1Item" class="collapsed">
                             Why bother with FP?
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="talksTrack1Session1Item" class="panel-collapse collapse in">
+                      <div id="talksTrack1Session1Item" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
                             <p>
@@ -657,6 +624,26 @@
                       </div>
                     </div>
                     -->
+                    <div class="panel panel-default" id="closingKeynote">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/staff/luigi-berrettini.jpg" class="img-responsive img-circle" alt="Luigi Berrettini" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#talksTrack1" href="#closingKeynoteItem">
+                            Closing keynote
+                          </a>
+                        </div>
+                      </div>
+                      <div id="closingKeynoteItem" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p class="author"><a href="#staff"><strong><i class="fa fa-user"></i>Luigi Berrettini</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="talksTrack2">
@@ -819,99 +806,567 @@
                   -->
                 </div>
                 <div class="tab-pane fade" id="talksTrack3">
+                  <article>
+                    <p>No schedule yet</p>
+                  </article>
+                  <!--
+                  <div class="panel-group timeline-schedule" id="talksTrack3">
+                    <div class="panel panel-default" id="talksTrack3Session1">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session1Item">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack3Session2">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session2Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack3Session3">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session3Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session3Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack3Session4">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session4Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session4Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack3Session5">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session5Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session5Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack3Session6">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack3" href="#talksTrack3Session6Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack3Session6Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  -->
                 </div>
                 <div class="tab-pane fade" id="talksTrack4">
+                  <article>
+                    <p>No schedule yet</p>
+                  </article>
+                  <!--
+                  <div class="panel-group timeline-schedule" id="talksTrack4">
+                    <div class="panel panel-default" id="talksTrack4Session1">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session1Item">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack4Session2">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session2Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack4Session3">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session3Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session3Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack4Session4">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session4Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session4Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack4Session5">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session5Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session5Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack4Session6">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack4" href="#talksTrack4Session6Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack4Session6Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  -->
+                </div>
+                <div class="tab-pane fade" id="talksTrack5">
+                  <article>
+                    <p>No schedule yet</p>
+                  </article>
+                  <!--
+                  <div class="panel-group timeline-schedule" id="talksTrack5">
+                    <div class="panel panel-default" id="talksTrack5Session1">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session1Item">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack5Session2">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session2Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack5Session3">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session3Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session3Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack5Session4">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session4Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session4Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack5Session5">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session5Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session5Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="talksTrack5Session6">
+                      <div class="speaker-wrapper">
+                        <img src="assets/images/speakers/__________SPEAKER__________.jpg" class="img-responsive img-circle" alt="__________SPEAKER__________" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div>
+                          <a data-toggle="collapse" data-parent="#talksTrack5" href="#talksTrack5Session6Item" class="collapsed">
+                            __________TITLE__________
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="talksTrack5Session6Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              __________DESCRIPTION__________
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>__________SPEAKER__________</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  -->
                 </div>
               </div>
             </div>
-			
-			<div class="tab-pane fade outer-tab-pane" id="workshops">
-			  <div class="tab-content">
-				<div class="tab-pane fade in active" id="workshopsOnlytrack">
-					<div class="panel-group timeline-schedule" id="workshopsOnlytrack">
-					
-						<div class="panel panel-default" id="webAppsClojure">
-						  <div class="speaker-wrapper">
+            <div class="tab-pane fade workshops-tab-pane" id="workshops">
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="workshopsOnlyTrack">
+                  <div class="panel-group timeline-schedule" id="workshopsOnlyTrack">
+                    <div class="panel panel-default" id="workshopsOnlyTrackSession1">
+                      <div class="speaker-wrapper">
 							<img src="assets/images/speakers/jan-stępień.jpg" class="img-responsive img-circle" alt="Jan Stępień" />
 						  </div>
-						  <div class="panel-heading">
-							<div class="panel-title">
-							  <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
-							  <a data-toggle="collapse" data-parent="#workshopsOnlytrack" href="#webAppsClojureItem">
-								Web apps in Clojure
-								<div class="pull-right fa fa-angle-up collapse-angle"></div>
-								<div class="pull-right fa fa-angle-down collapse-angle"></div>
-							  </a>
-							</div>
-						  </div>
-						  <div id="webAppsClojureItem" class="panel-collapse collapse in">
-							<div class="panel-body">
-							  <article>
-								<p>
-								  <div>
-									<h8>Description</h8>
-								  </div>
-								  <div>
-									In this workshop we will demonstrate how easy it is to use Clojure to build modern web applications, including REPL-driven development, templating and state management. We'll also show how to package and run the application in a standalone way.
-								  </div>
-								  <br/>
-								  <div>
-									<h8>Prerequisites</h8>
-								  </div>
-								  <div>
-									This workshop is not an entry level one: we expect the audience to be familiar with the basics of Clojure and to have a Clojure environment installed, with the ability to connect the editor to a Clojure REPL session.
-									We will provide participants with a pre-workshop to-do list.
-								  </div>
-								</p>
-								<p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a></p>
-							  </article>
-							</div>
-						  </div>
-						</div>
-					
-						<div class="panel panel-default" id="introErlang">
-						  <div class="speaker-wrapper">
-							<img src="assets/images/speakers/simon-zelazny.jpg" class="img-responsive img-circle" alt="Simon Zelazny" />
-						  </div>
-						  <div class="panel-heading">
-							<div class="panel-title">
-								<!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
-							  <a data-toggle="collapse" data-parent="#workshopsOnlytrack" href="#introErlangItem" class="collapsed">
-								An introduction to Erlang/OTP
-								<div class="pull-right fa fa-angle-up collapse-angle"></div>
-								<div class="pull-right fa fa-angle-down collapse-angle"></div>
-							  </a>
-							</div>
-						  </div>
-						  <div id="introErlangItem" class="panel-collapse collapse">
-							<div class="panel-body">
-							  <article>
-								<p>
-								  <div>
-									<h8>Description</h8>
-								  </div>
-								  <div>
-									Hands-on workshop for developers with no prior experience in Erlang, which aims at building a simple client-server architecture using Erlang/OTP and real tools like telnet, curl, rebar and relx.
-								  </div>
-								  <br/>
-								  <div>
-									<h8>Prerequisites</h8>
-								  </div>
-								  <div>
-									Participants may want to install Erlang/OTP runtime before attending the workshop so that they can implement exercise themselves.
-								  </div>
-								</p>
-								<p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a></p>
-							  </article>
-							</div>
-						  </div>
-						</div>
-					
-					</div>
-				</div>
-			  </div>
-			</div>
-			
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#workshopsOnlyTrack" href="#workshopsOnlyTrackSession1Item">
+                            Web apps in Clojure
+                            <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                            <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="workshopsOnlyTrackSession1Item" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                <h8>Description</h8>
+                              </div>
+                              <div>
+                                In this workshop we will demonstrate how easy it is to use Clojure to build modern web applications, including REPL-driven development, templating and state management. We'll also show how to package and run the application in a standalone way.
+                              </div>
+                              <br/>
+                              <div>
+                                <h8>Prerequisites</h8>
+                              </div>
+                              <div>
+                                This workshop is not an entry level one: we expect the audience to be familiar with the basics of Clojure and to have a Clojure environment installed, with the ability to connect the editor to a Clojure REPL session.
+                                We will provide participants with a pre-workshop to-do list.
+                              </div>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default" id="workshopsOnlyTrackSession2">
+                      <div class="speaker-wrapper">
+                      <img src="assets/images/speakers/simon-zelazny.jpg" class="img-responsive img-circle" alt="Simon Zelazny" />
+                      </div>
+                      <div class="panel-heading">
+                        <div class="panel-title">
+                          <!-- <div class="time"><i class="fa fa-clock-o"></i> XX:XX AM</div> -->
+                          <a data-toggle="collapse" data-parent="#workshopsOnlyTrack" href="#workshopsOnlyTrackSession2Item" class="collapsed">
+                          An introduction to Erlang/OTP
+                          <div class="pull-right fa fa-angle-up collapse-angle"></div>
+                          <div class="pull-right fa fa-angle-down collapse-angle"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div id="workshopsOnlyTrackSession2Item" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <article>
+                            <p>
+                              <div>
+                                <h8>Description</h8>
+                              </div>
+                              <div>
+                                Hands-on workshop for developers with no prior experience in Erlang, which aims at building a simple client-server architecture using Erlang/OTP and real tools like telnet, curl, rebar and relx.
+                              </div>
+                              <br/>
+                              <div>
+                                <h8>Prerequisites</h8>
+                              </div>
+                              <div>
+                                Participants may want to install Erlang/OTP runtime before attending the workshop so that they can implement exercise themselves.
+                              </div>
+                            </p>
+                            <p class="author"><a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a></p>
+                          </article>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <!--
