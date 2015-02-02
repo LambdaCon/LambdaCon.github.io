@@ -31,7 +31,7 @@
 
         var flexSlider = $('.flexslider').flexslider({
           animation: "slide",
-          animationLoop: false,
+          //animationLoop: false,
           itemWidth: 300,
           itemMargin: 5,
           minItems: 2,
@@ -46,7 +46,7 @@
 
         flexSlider.data('flexslider').pause();
         
-        // fade in .back-to-top
+        // fade in back-to-top
         $(window).scroll(function () {
             if ($(this).scrollTop() > 500) {
                 app.el['back-to-top'].fadeIn();
