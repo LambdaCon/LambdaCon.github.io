@@ -45,7 +45,7 @@
         });
 
         flexSlider.data('flexslider').pause();
-        
+
         // fade in back-to-top
         $(window).scroll(function () {
             if ($(this).scrollTop() > 500) {
@@ -109,6 +109,27 @@
         });
 
         $('.fancybox').fancybox();
+
+		// ****** GOOGLE MAP *******
+		google.maps.event.addDomListener(window, 'load', function () {
+			var mapOptions = {
+				zoom: 15,
+				scrollwheel: false,
+				panControl: false,
+				mapTypeControl: false,
+				streetViewControl: false,
+				center: new google.maps.LatLng(44.4883, 11.3205),
+			};
+
+			var map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
+			var image = 'assets/images/pmarker.png';
+			var myLatLng = new google.maps.LatLng(44.488370, 11.328466);
+			var beachMarker = new google.maps.Marker({
+				position: myLatLng,
+				map: map,
+				icon: image
+			});
+		});
 
         if (window.CKEDITOR) {
           CKEDITOR.on("instanceReady", function(event) {
