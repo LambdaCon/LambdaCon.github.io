@@ -110,7 +110,6 @@
 
         $('.fancybox').fancybox();
 
-		// ****** GOOGLE MAP *******
 		google.maps.event.addDomListener(window, 'load', function () {
 			var mapOptions = {
 				zoom: 15,
