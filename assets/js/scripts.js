@@ -117,11 +117,11 @@
 				panControl: false,
 				mapTypeControl: false,
 				streetViewControl: false,
-				center: new google.maps.LatLng(44.4883, 11.3205),
+				center: new google.maps.LatLng(44.4883, 11.3205)
 			};
 
 			var map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
-			var image = 'assets/images/pmarker.png';
+			var image = 'assets/images/position.png';
 			var myLatLng = new google.maps.LatLng(44.488370, 11.328466);
 			var beachMarker = new google.maps.Marker({
 				position: myLatLng,
