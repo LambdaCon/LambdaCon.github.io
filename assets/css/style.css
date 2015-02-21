@@ -604,9 +604,37 @@ label.error { display: block; }
 .pricing-col-featured .pricing-col-button { margin: 0; margin-top: 25px; background: #2da9ff; }
 .pricing-col-featured .pricing-col-button:hover { opacity: 0.9; }
 
-#sponsors .list-inline li { width: 30%; padding: 2% }
-#sponsors .list-inline { margin-bottom:30px;}
-#sponsors img{ width: 100%;}
+#sponsors .list-inline { margin-bottom: 30px;}
+#sponsors .list-inline li { width: 30%; padding: 2%; margin-bottom: 30px; }
+#sponsors .list-inline li a.sponsor { position:relative; }
+#sponsors .list-inline li a.sponsor:after {
+   position: relative;
+   top: 20px;
+   color:white;
+   text-align:center;
+   padding: 4px 8px;
+   font-weight: bold;
+   font-size: 0.8em;
+   font-family: Verdana;
+}
+#sponsors .list-inline li a.sponsor.diamond:after {
+   content: "DIAMOND SPONSOR";
+   background: #0ABAE9;
+}
+#sponsors .list-inline li a.sponsor.ruby:after {
+   content: "RUBY SPONSOR";
+   background: #CC342D;
+}
+#sponsors .list-inline li a.sponsor.emerald:after {
+   content: "EMERALD SPONSOR";
+   background: #5B9C64;
+}
+#sponsors .list-inline li a.sponsor.sapphire:after {
+   content: "SAPPHIRE SPONSOR";
+   background: #0F52BA;
+}
+
+#sponsors .list-inline li a img{ width: 100%;}
 
 #location-gmap { width:100%; height:650px; }
 #location-gmap img { max-width:none; }
