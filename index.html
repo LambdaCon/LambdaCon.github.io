@@ -362,7 +362,7 @@
                   </li>
                 </ul>
                 <div class="tab-pane fade in active" id="talksTrack1" >
-                  <div class="panel-group timeline-schedule" id="talksTrack1">
+                  <div class="panel-group timeline-schedule">
                     <div class="panel panel-default" id="welcomeKeynote">
                       <div class="speaker-wrapper">
                         <img src="assets/images/staff/vlad-saftoiu.jpg" class="img-responsive img-circle" alt="Vlad Saftoiu" />
@@ -375,12 +375,12 @@
                           </a>
                         </div>
                       </div>
-                      <div id="welcomeKeynoteItem">
+                      <div id="welcomeKeynoteDetails">
                         <div class="panel-body">
                           <article>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#staff"><strong><i class="fa fa-user"></i>Vlad Saftoiu</strong></a>
-                            </p>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -392,25 +392,25 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o"></i>09:45 - 10:30</div>
-                          <a class="collapsed" href="#openingKeynoteItem" data-toggle="collapse">
+                          <a class="collapsed" href="#openingKeynoteDetails" data-toggle="collapse">
                             Opening keynote - Fun with categories
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="openingKeynoteItem" class="panel-collapse collapse">
+                      <div id="openingKeynoteDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               A category is an embarrassingly simple yet powerful concept.
                               It's behind Unix pipes, simple arithmetic, programming types, functions, state and side effects.
                               I will show you how categories can be used to design generic C++ libraries.
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Bartosz Milewski</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -422,17 +422,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o"></i>11:00 - 11:45</div>
-                          <a class="collapsed" href="#clojureRedeployedItem" data-toggle="collapse">
+                          <a class="collapsed" href="#clojureRedeployedDetails" data-toggle="collapse">
                             Clojure redeployed
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="clojureRedeployedItem" class="panel-collapse collapse">
+                      <div id="clojureRedeployedDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 At stylefruits we've been using Clojure on production since late 2012.
                                 We've made a lot of mistakes and we've learned a lot.
@@ -455,10 +455,11 @@
                                 while prototyping, deploying and maintaining our newest project.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -470,17 +471,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">12:00 - 12:45</i></div>
-                          <a class="collapsed" href="#persistingPersistentDataStructuresItem" data-toggle="collapse">
+                          <a class="collapsed" href="#persistingPersistentDataStructuresDetails" data-toggle="collapse">
                             Persisting persistent data structures
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="persistingPersistentDataStructuresItem" class="panel-collapse collapse">
+                      <div id="persistingPersistentDataStructuresDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Reading and writing to data stores is often a pain point for programmers new to functional programming between the perceived loss of “purity”
                                 and the awkward mismatch between functional APIs and the relational data models or mutable documents in a document store.
@@ -493,10 +494,11 @@
                                 and we’ll also investigate what makes for a "good" event to store, using techniques from Domain Driven Design.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Michael Newton</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>F#</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -508,17 +510,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">14:00 - 14:45</i></div>
-                          <a class="collapsed" href="#dissectingTheRabbitItem" data-toggle="collapse">
+                          <a class="collapsed" href="#dissectingTheRabbitDetails" data-toggle="collapse">
                             Dissecting the Rabbit
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="dissectingTheRabbitItem" class="panel-collapse collapse">
+                      <div id="dissectingTheRabbitDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 The talk aims to show how RabbitMQ uses Erlang/OTP to build a message broker.
                                 We will go through "a day in the life of a message" to explore the different patterns used by RabbitMQ to handle message ingress, routing and message delivery.
@@ -534,10 +536,11 @@
                                 <li>supervisor Trees, RabbitMQ own behaviours and more</li>
                               </ul>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Alvaro Videla</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -549,17 +552,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">15:00 - 15:45</i></div>
-                          <a class="collapsed" href="#theActorModelInFSharpAndAkkaNetItem" data-toggle="collapse">
+                          <a class="collapsed" href="#theActorModelInFSharpAndAkkaNetDetails" data-toggle="collapse">
                             The Actor Model in F# and Akka.NET
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="theActorModelInFSharpAndAkkaNetItem" class="panel-collapse collapse">
+                      <div id="theActorModelInFSharpAndAkkaNetDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Writing correct concurrent, fault-tolerant, scalable applications is no simple task.
                                 The struggle is generally the result of using the wrong tools or wrong level of abstraction.
@@ -574,10 +577,11 @@
                                 utilizing tools such as Akka.NET which is a .NET port of the popular JVM framework Akka.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Riccardo Terrell</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>F#</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -589,17 +593,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">16:15 - 17:00</i></div>
-                          <a class="collapsed" href="#drinkingFromTheFirehoseTheErlangWayItem" data-toggle="collapse">
+                          <a class="collapsed" href="#drinkingFromTheFirehoseTheErlangWayDetails" data-toggle="collapse">
                             Drinking from the firehose the Erlang way
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="drinkingFromTheFirehoseTheErlangWayItem" class="panel-collapse collapse">
+                      <div id="drinkingFromTheFirehoseTheErlangWayDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Imagine that you have tens of millions of endpoints, each of which is sending you a constant stream of data to the tunes of petabytes per second.
                                 You also have millions of uses who want to monitor and administer them and don't forget all the historical reports that these users insist upon all the time.
@@ -613,10 +617,11 @@
                                 I will show how we successfully drink from this firehose of data without spilling a drop
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Mahesh Paolini-Subramanya</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -628,17 +633,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">17:05 - 17:50</i></div>
-                          <a class="collapsed" href="#fSharpInTheRealWorldItem" data-toggle="collapse">
+                          <a class="collapsed" href="#fSharpInTheRealWorldDetails" data-toggle="collapse">
                             F# in the real world
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="fSharpInTheRealWorldItem" class="panel-collapse collapse">
+                      <div id="fSharpInTheRealWorldDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 F# is an incredibly versatile and expressive language and enables
                                 you to solve a wide array of problems succinctly and efficiently.
@@ -663,10 +668,11 @@
                                 </li>
                               </ul>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>F#</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -678,17 +684,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">18:00 - 18:30</i></div>
-                          <a class="collapsed" href="#closingKeynoteItem" data-toggle="collapse">
+                          <a>
                             Closing keynote
                           </a>
                         </div>
                       </div>
-                      <div id="closingKeynoteItem" class="panel-collapse collapse">
+                      <div id="closingKeynoteDetails">
                         <div class="panel-body">
                           <article>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#staff"><strong><i class="fa fa-user"></i>Luigi Berrettini</strong></a>
-                            </p>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -696,7 +702,7 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="talksTrack2">
-                  <div class="panel-group timeline-schedule" id="talksTrack2">
+                  <div class="panel-group timeline-schedule">
                     <div class="panel panel-default" id="fromImperativeToFunctionalApis">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/marek-kubica.jpg" class="img-responsive img-circle" alt="Marek Kubica" />
@@ -704,17 +710,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">11:00 - 11:45</i></div>
-                          <a class="collapsed" href="#fromImperativeToFunctionalApisItem" data-toggle="collapse">
+                          <a class="collapsed" href="#fromImperativeToFunctionalApisDetails" data-toggle="collapse">
                             From imperative to functional APIs
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="fromImperativeToFunctionalApisItem" class="panel-collapse collapse">
+                      <div id="fromImperativeToFunctionalApisDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Libraries and APIs often shape how our program looks like.
                               </div>
@@ -725,10 +731,11 @@
                                 In this talk we will explore how we can use features of OCaml, a functional programming language to improve on an interface provided by a C library.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Marek Kubica</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>OCaml</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -740,24 +747,25 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">12:00 - 12:45</i></div>
-                          <a class="collapsed" href="#functionalSurvivalInTheWorldOfConcurrentIoItem" data-toggle="collapse">
+                          <a class="collapsed" href="#functionalSurvivalInTheWorldOfConcurrentIoDetails" data-toggle="collapse">
                             Functional survival in the world of concurrent I/O
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="functionalSurvivalInTheWorldOfConcurrentIoItem" class="panel-collapse collapse">
+                      <div id="functionalSurvivalInTheWorldOfConcurrentIoDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                             <div>Learn about different approaches to handling input and output used by modern languages.</div>
                             <div>See how using streams and a touch of concurrency in Elixir helps writing clear and concise code that deals with I/O.</div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Alexei Sholik</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Elixir</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -769,17 +777,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">14:00 - 14:45</i></div>
-                          <a class="collapsed" href="#aLiveCodedAdventureHtml5GamesAndFrpItem" data-toggle="collapse">
+                          <a class="collapsed" href="#aLiveCodedAdventureHtml5GamesAndFrpDetails" data-toggle="collapse">
                             A live-coded adventure: HTML5 games and FRP
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="aLiveCodedAdventureHtml5GamesAndFrpItem" class="panel-collapse collapse">
+                      <div id="aLiveCodedAdventureHtml5GamesAndFrpDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 This talk will leverage Elm and its powerful toolset to demonstrate how to quickly create HTML5 games and websites.
                               </div>
@@ -787,10 +795,11 @@
                                 No knowledge of Elm or functional reactive programming is assumed: concepts will be explained through live coding and audience interaction
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Joe Nash</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Elm</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -802,17 +811,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">15:00 - 15:45</i></div>
-                          <a class="collapsed" href="#lessonsFromErlangItem" data-toggle="collapse">
+                          <a class="collapsed" href="#lessonsFromErlangDetails" data-toggle="collapse">
                             Lessons from Erlang
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="lessonsFromErlangItem" class="panel-collapse collapse">
+                      <div id="lessonsFromErlangDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 In this talk we will learn how to think when using a concurrent programming language and what problems we have to solve.
                               </div>
@@ -822,10 +831,11 @@
                               <div>
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -837,17 +847,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">16:15 - 17:00</i></div>
-                          <a class="collapsed" href="#whatIsWrongWithOopItem" data-toggle="collapse">
+                          <a class="collapsed" href="#whatIsWrongWithOopDetails" data-toggle="collapse">
                             What’s wrong with OOP
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="whatIsWrongWithOopItem" class="panel-collapse collapse">
+                      <div id="whatIsWrongWithOopDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 A deep dive tale about programming and logic.
                               </div>
@@ -858,10 +868,12 @@
                                 We will examine the bad and good parts of the paradigm to, maybe, discover that the original idea is not so far from what we call “Functional Programming”.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Roberto Sasso</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
+                                <div><strong><i class="fa fa-code"></i>C#</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -873,17 +885,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">17:05 - 17:50</i></div>
-                          <a class="collapsed" href="#tddAsInTypeDirectedDevelopmentItem" data-toggle="collapse">
+                          <a class="collapsed" href="#tddAsInTypeDirectedDevelopmentDetails" data-toggle="collapse">
                             TDD as in Type-Directed Development
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="tddAsInTypeDirectedDevelopmentItem" class="panel-collapse collapse">
+                      <div id="tddAsInTypeDirectedDevelopmentDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Test-Driven Development is widely accepted as good practice, but can we do better?
                               </div>
@@ -894,10 +906,12 @@
                                 This talk will show how to use types not only for safety but also as guides, as well as a perfect means of communication.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Clément Delafargue</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Scala</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -905,7 +919,7 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="talksTrack3">
-                  <div class="panel-group timeline-schedule" id="talksTrack3">
+                  <div class="panel-group timeline-schedule">
                     <div class="panel panel-default" id="whyBotherWithFp">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/tomek-borek.jpg" class="img-responsive img-circle" alt="Tomek Borek" />
@@ -913,17 +927,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">11:00 - 11:45</i></div>
-                          <a  class="collapsed" href="#whyBotherWithFpItem" data-toggle="collapse">
+                          <a  class="collapsed" href="#whyBotherWithFpDetails" data-toggle="collapse">
                             Why bother with FP?
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="whyBotherWithFpItem" class="panel-collapse collapse">
+                      <div id="whyBotherWithFpDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Instead of just bashing other paradigms I'll provide real arguments for FP, backed.
                               </div>
@@ -936,10 +950,10 @@
                                 <li>pure OOP model (Smalltalk, though model is quite language agnostic)</li>
                               </ul>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Tomek Borek</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -951,17 +965,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">12:00 - 12:45</i></div>
-                          <a class="collapsed" href="#lifeOfAnErlangProcessItem" data-toggle="collapse">
+                          <a class="collapsed" href="#lifeOfAnErlangProcessDetails" data-toggle="collapse">
                             Life of an Erlang process
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="lifeOfAnErlangProcessItem" class="panel-collapse collapse">
+                      <div id="lifeOfAnErlangProcessDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 A high-level introduction to the Erlang programming language:
                                 among other topics, the talk covers Erlang processes, message passing, supervision trees, the let-it-crash approach and more.
@@ -973,10 +987,11 @@
                                 We reveal the recipe of the secret Erlang sauce which makes possible the creation of reliable, scalable systems which never go down.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Roberto Aloi</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -988,17 +1003,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">14:00 - 14:45</i></div>
-                          <a class="collapsed" href="#usingHaskellProfessionallyItem" data-toggle="collapse">
+                          <a class="collapsed" href="#usingHaskellProfessionallyDetails" data-toggle="collapse">
                             Using Haskell professionally
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="usingHaskellProfessionallyItem" class="panel-collapse collapse">
+                      <div id="usingHaskellProfessionallyDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Studying FP during free time is a lot of fun, but most people are reluctant in making an effort learning a functional language
                                 because they think it would be impractical to use in the everyday job industry.
@@ -1008,10 +1023,11 @@
                                 purity and conciseness that Haskell offers are the perfect ingredients to make a business succeeds.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Alfredo Di Napoli</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1023,17 +1039,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">15:00 - 15:45</i></div>
-                          <a class="collapsed" href="#introductionToTheSparkEcosystemItem" data-toggle="collapse">
+                          <a class="collapsed" href="#introductionToTheSparkEcosystemDetails" data-toggle="collapse">
                             Introduction to the Spark ecosystem
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="introductionToTheSparkEcosystemItem" class="panel-collapse collapse">
+                      <div id="introductionToTheSparkEcosystemDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Did you ever wondered how you could run you Scala algorithms on thousands of cores?
                               </div>
@@ -1044,10 +1060,11 @@
                                 You will learn all the components and technologies in the Spark ecosystem and how to use them to scale your Scala code to thousands of cores.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Federico Feroldi</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Scala</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1059,24 +1076,25 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">16:15 - 17:00</i></div>
-                          <a class="collapsed" href="#rustNowAndThenItem"data-toggle="collapse">
+                          <a class="collapsed" href="#rustNowAndThenDetails" data-toggle="collapse">
                             Rust now and then
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="rustNowAndThenItem" class="panel-collapse collapse">
+                      <div id="rustNowAndThenDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               A talk aiming to provide a functional view to a very young mainly system language that features things like algebraic data types, zero-cost abstractions and guarantees memory safety.
                               Despite not being a pure functional language, Rust shows great potential in this area.
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Flavio Percoco</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Rust</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1084,7 +1102,7 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="talksTrack4">
-                  <div class="panel-group timeline-schedule" id="talksTrack4">
+                  <div class="panel-group timeline-schedule">
                     <div class="panel panel-default" id="elixirLoveAtFirstSip">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/andrea-leopardi.jpg" class="img-responsive img-circle" alt="Andrea Leopardi" />
@@ -1092,17 +1110,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">11:00 - 11:45</i></div>
-                          <a class="collapsed" href="#elixirLoveAtFirstSipItem" data-toggle="collapse">
+                          <a class="collapsed" href="#elixirLoveAtFirstSipDetails" data-toggle="collapse">
                             Elixir: love at first sip
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="elixirLoveAtFirstSipItem" class="panel-collapse collapse">
+                      <div id="elixirLoveAtFirstSipDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 An introduction to the new and exciting Elixir programming language, a language based on the Erlang VM which compiles down to Erlang bytecode.
                               </div>
@@ -1110,10 +1128,11 @@
                                 The talk will showcase Elixir’s most powerful features, its support for concurrency and its wonderful macro system, while remaining a beginner’s introduction.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Andrea Leopardi</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Elixir</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1125,17 +1144,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">12:00 - 12:45</i></div>
-                          <a class="collapsed" href="#myAdventureWithElmItem" data-toggle="collapse">
+                          <a class="collapsed" href="#myAdventureWithElmDetails" data-toggle="collapse">
                             My adventure with Elm
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="myAdventureWithElmItem" class="panel-collapse collapse">
+                      <div id="myAdventureWithElmDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Reactive Extensions (Rx) has brought reactive programming to the mainstream in recent years with successful adoption in languages such as C#, Java and JavaScript.
                                 But have you ever wondered what Rx will look like as a language?
@@ -1149,10 +1168,11 @@
                                 You will leave this session with a handle on the Functional Reactive Programming paradigm and a basic understanding of the Elm language.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Elm</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1164,17 +1184,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">14:00 - 14:45</i></div>
-                          <a class="collapsed" href="#haskellForDataScienceItem" data-toggle="collapse">
+                          <a class="collapsed" href="#haskellForDataScienceDetails" data-toggle="collapse">
                             Haskell for data science
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="haskellForDataScienceItem" class="panel-collapse collapse">
+                      <div id="haskellForDataScienceDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Data Science it's really pretty buzzword, and I want also use this to promote Haskell.
                               </div>
@@ -1185,10 +1205,11 @@
                                 Drum roll... I want to show you how Haskell can help you with analysing data: we will be using it on real life examples
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Vladimir Alekseichenko</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1200,17 +1221,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">15:00 - 15:45</i></div>
-                          <a class="collapsed" href="#streamsOnTopOfScalaItem" data-toggle="collapse">
+                          <a class="collapsed" href="#streamsOnTopOfScalaDetails" data-toggle="collapse">
                             Streams on top of Scala
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="streamsOnTopOfScalaItem" class="panel-collapse collapse">
+                      <div id="streamsOnTopOfScalaDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Everybody has something about streams on the Scala platform: iteratee, scalaz.streams, reactive streams, akka.io, and so on.
                               </div>
@@ -1221,10 +1242,11 @@
                                 You will understand what are streams, why you need them and how to use them in real world scenarios
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Quentin Adam</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Scala</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1236,17 +1258,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">16:15 - 17:00</i></div>
-                          <a class="collapsed" href="#monadicParserCombinatorsWithTypeScriptItem" data-toggle="collapse">
+                          <a class="collapsed" href="#monadicParserCombinatorsWithTypeScriptDetails" data-toggle="collapse">
                             Monadic parser combinators with TypeScript
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="monadicParserCombinatorsWithTypeScriptItem" class="panel-collapse collapse">
+                      <div id="monadicParserCombinatorsWithTypeScriptDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 TypeScript is a fairly new programming language of the family of those languages that compile to JavaScript.
                               </div>
@@ -1258,10 +1280,11 @@
                                 This session shows how to build generic parsers using combinators and a monadic approach for combination.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Simone Busoli</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>TypeScript</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1269,7 +1292,7 @@
                   </div>
                 </div>
                 <div class="tab-pane fade" id="talksTrack5">
-                  <div class="panel-group timeline-schedule" id="talksTrack5">
+                  <div class="panel-group timeline-schedule">
                     <div class="panel panel-default" id="itIsTheTypeTheoryBaby">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/michele-finelli.jpg" class="img-responsive img-circle" alt="Michele Finelli" />
@@ -1277,17 +1300,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">11:00 - 11:45</i></div>
-                          <a class="collapsed" href="#itIsTheTypeTheoryBabyItem" data-toggle="collapse">
+                          <a class="collapsed" href="#itIsTheTypeTheoryBabyDetails" data-toggle="collapse">
                             It's the type theory baby!
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="itIsTheTypeTheoryBabyItem" class="panel-collapse collapse">
+                      <div id="itIsTheTypeTheoryBabyDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 A gentle introduction to type theory (well, not so gentle ...): my position is that one of the most important feature of a language,
                                 in order to help programmers to write correct code, is the type system.
@@ -1296,10 +1319,10 @@
                                 The talk aims at supporting that position and makes a brief excursus on the history of types.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Michele Finelli</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1311,17 +1334,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">12:00 - 12:45</i></div>
-                          <a class="collapsed" href="#theRelationWithTypesItem" data-toggle="collapse">
+                          <a class="collapsed" href="#theRelationWithTypesDetails" data-toggle="collapse">
                             The relation with types
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="theRelationWithTypesItem" class="panel-collapse collapse">
+                      <div id="theRelationWithTypesDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 Have you ever wondered how much information does a type signature convey or if we can learn anything significant about a function just by knowing its type?
                                 It turns out that, with just a bit of theory, we can learn a lot!
@@ -1334,10 +1357,10 @@
                                 but can also be useful in designing many real-life algorithms and applications.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Marcin Kostrzewa</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1349,25 +1372,26 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">14:00 - 14:45</i></div>
-                          <a class="collapsed" href="#genericPolymorphismOnSteroidsItem" data-toggle="collapse">
+                          <a class="collapsed" href="#genericPolymorphismOnSteroidsDetails" data-toggle="collapse">
                             Generic polymorphism on steroids
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="genericPolymorphismOnSteroidsItem" class="panel-collapse collapse">
+                      <div id="genericPolymorphismOnSteroidsDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                             <div>Generic polymorphism allows to call the very same code on data structures that store data belonging to different types. Type inference allows to write code without declaring the type of functions: the compiler discovers by itself the most generic type of a polymorphic function.</div>
                             <div>New data types, however, still need to be declared beforehand. Can we push these mechanisms to let the compiler infer by itself the shape of data structures, completely removing the need for declaration of data types?</div>
                             <div>I will present how the OCaml language stretches the limits of type inference and generic polymorphism with polymorphic variant and the dual notion of extensible records. The former concisely solve, among others and with more guarantees, the expression problem often used to justify the supremacy of OOP. The latter provide persistent objects with user controlled late binding and a very flexible type system that is not based on subtyping and does not require dynamic casts.</div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Claudio Sacerdoti Coen</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>OCaml</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1379,17 +1403,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">15:00 - 15:45</i></div>
-                          <a class="collapsed" href="#embracingClojureAJourneyIntoClojureAdoptionItem" data-toggle="collapse">
+                          <a class="collapsed" href="#embracingClojureAJourneyIntoClojureAdoptionDetails" data-toggle="collapse">
                             Embracing Clojure: a journey into Clojure adoption
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="embracingClojureAJourneyIntoClojureAdoptionItem" class="panel-collapse collapse">
+                      <div id="embracingClojureAJourneyIntoClojureAdoptionDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 What happens when a small team of very experienced developers with no real functional programming experience decides to use Clojure to run a core system architecture component?
                               </div>
@@ -1397,10 +1421,11 @@
                                 In this talk I’ll walk you through the 2 years journey of my team with Clojure, sharing learnings, epiphanies, success as well as some of the challenges we encountered.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Luca Grulla</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1412,17 +1437,17 @@
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o">16:15 - 17:00</i></div>
-                          <a class="collapsed" href="#functionCompositionForEverythingItem" data-toggle="collapse">
+                          <a class="collapsed" href="#functionCompositionForEverythingDetails" data-toggle="collapse">
                             Function composition for everything
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="functionCompositionForEverythingItem" class="panel-collapse collapse">
+                      <div id="functionCompositionForEverythingDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <ul>
                                 <li>
                                   How can we structure programs around function composition
@@ -1441,10 +1466,11 @@
                                 Everything will be done in an interactive session, so that people can follow in their laptops: Factor is concise enough that this should actually be practical.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Andrea Ferretti</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Factor</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1456,25 +1482,25 @@
             <div class="tab-pane fade workshops-tab-pane" id="workshops">
               <div class="tab-content">
                 <div class="tab-pane fade in active" id="workshopsOnlyTrack">
-                  <div class="panel-group timeline-schedule" id="workshopsOnlyTrack">
-                    <div class="panel panel-default" id="workshopsOnlyTrackSession1">
+                  <div class="panel-group timeline-schedule">
+                    <div class="panel panel-default" id="anIntroductionToErlangOtp">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/simon-zelazny.jpg" class="img-responsive img-circle" alt="Simon Zelazny" />
                       </div>
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o"></i>11:00 - 12:45</div>
-                          <a class="collapsed" href="#workshopsOnlyTrackSession1Item" data-toggle="collapse">
+                          <a class="collapsed" href="#anIntroductionToErlangOtpDetails" data-toggle="collapse">
                             An introduction to Erlang/OTP
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="workshopsOnlyTrackSession1Item" class="panel-collapse collapse">
+                      <div id="anIntroductionToErlangOtpDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 <h8>Description</h8>
                               </div>
@@ -1489,32 +1515,33 @@
                                 Participants may want to install Erlang/OTP runtime before attending the workshop so that they can implement exercise themselves.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Beginner</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
                     </div>
-                    <div class="panel panel-default" id="workshopsOnlyTrackSession2">
+                    <div class="panel panel-default" id="webAppsInClojure">
                       <div class="speaker-wrapper">
                         <img src="assets/images/speakers/jan-stępień.jpg" class="img-responsive img-circle" alt="Jan Stępień" />
                       </div>
                       <div class="panel-heading">
                         <div class="panel-title">
                           <div class="time"><i class="fa fa-clock-o"></i>14:00 - 15:45</div>
-                          <a class="collapsed" href="#workshopsOnlyTrackSession2Item" data-toggle="collapse">
+                          <a class="collapsed" href="#webAppsInClojureDetails" data-toggle="collapse">
                             Web apps in Clojure
                             <div class="pull-right fa fa-angle-up collapse-angle"></div>
                             <div class="pull-right fa fa-angle-down collapse-angle"></div>
                           </a>
                         </div>
                       </div>
-                      <div id="workshopsOnlyTrackSession2Item" class="panel-collapse collapse">
+                      <div id="webAppsInClojureDetails" class="panel-collapse collapse">
                         <div class="panel-body">
                           <article>
-                            <p>
+                            <p class="session-description">
                               <div>
                                 <h8>Description</h8>
                               </div>
@@ -1532,10 +1559,11 @@
                                 We will provide participants with a pre-workshop to-do list.
                               </div>
                             </p>
-                            <p class="author">
+                            <div class="session-info">
                                 <a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
-                                <a href="#speakers"><strong><i class="fa fa-tag"></i>Intermediate</strong></a>
-                            </p>
+                                <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
+                                <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
+                            </div>
                           </article>
                         </div>
                       </div>
@@ -1557,7 +1585,6 @@
 
     <section id="speakers" class="section light carousel slide" data-ride="carousel" data-interval="false">
       <div class="overlay"></div>
-
       <div class="container">
         <div class="icon-wrap"><span class="icon icon-active icon-multimedia-12"></span></div>
         <h3>Speakers</h3>
