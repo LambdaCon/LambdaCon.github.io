@@ -31,8 +31,8 @@
 
         var flexSlider = $('.flexslider').flexslider({
           animation: "slide",
-          //animationLoop: false,
-          itemWidth: 300,
+          animationLoop: true,
+          itemWidth: 285,
           itemMargin: 5,
           minItems: 2,
           maxItems: 4,
@@ -44,7 +44,16 @@
           useCSS: false
         });
 
-        flexSlider.data('flexslider').pause();
+        var flexSliderObj = flexSlider.data('flexslider');
+        flexSliderObj.pause();
+        
+        $(".speaker-link").click(function (e){
+            var speakerId = $(e.currentTarget).data('speakerId');
+            var speakerIndex = flexSlider.find(speakerId).index() + 1;
+            var speakersPerSlide = flexSliderObj.visible;
+            var speakerSlideIndex = Math.floor(speakerIndex / speakersPerSlide);
+            flexSliderObj.flexAnimate(speakerSlideIndex)
+        });
 
         // fade in back-to-top
         $(window).scroll(function () {

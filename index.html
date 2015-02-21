@@ -121,7 +121,7 @@
           <ul class="navigation-bar navigation-bar-left">
             <li class="active"><a href="#about">About</a></li>
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
+            <li><a class="speaker-link" href="#speakers" data-speaker-id="#">Speakers</a></li>
             <!--
               <li><a href="#stat">Facts</a></li>
               <li><a href="#price">Prices</a></li>
@@ -408,7 +408,7 @@
                               I will show you how categories can be used to design generic C++ libraries.
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Bartosz Milewski</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#milewski"><strong><i class="fa fa-user"></i>Bartosz Milewski</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                             </div>
                           </article>
@@ -456,7 +456,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#stepien"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
                             </div>
@@ -495,7 +495,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Michael Newton</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#newton"><strong><i class="fa fa-user"></i>Michael Newton</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>F#</strong></div>
                             </div>
@@ -537,7 +537,7 @@
                               </ul>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Alvaro Videla</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#videla"><strong><i class="fa fa-user"></i>Alvaro Videla</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
                             </div>
@@ -578,7 +578,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Riccardo Terrell</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#terrell"><strong><i class="fa fa-user"></i>Riccardo Terrell</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>F#</strong></div>
                             </div>
@@ -618,7 +618,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Mahesh Paolini-Subramanya</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#paolini"><strong><i class="fa fa-user"></i>Mahesh Paolini-Subramanya</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
                             </div>
@@ -669,7 +669,7 @@
                               </ul>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#cui"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>F#</strong></div>
                             </div>
@@ -732,7 +732,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Marek Kubica</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#kubica"><strong><i class="fa fa-user"></i>Marek Kubica</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>OCaml</strong></div>
                             </div>
@@ -762,7 +762,7 @@
                             <div>See how using streams and a touch of concurrency in Elixir helps writing clear and concise code that deals with I/O.</div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Alexei Sholik</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#sholik"><strong><i class="fa fa-user"></i>Alexei Sholik</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Elixir</strong></div>
                             </div>
@@ -796,7 +796,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Joe Nash</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#nash"><strong><i class="fa fa-user"></i>Joe Nash</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Elm</strong></div>
                             </div>
@@ -832,7 +832,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#zelazny"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
                             </div>
@@ -869,7 +869,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Roberto Sasso</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#sasso"><strong><i class="fa fa-user"></i>Roberto Sasso</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
                                 <div><strong><i class="fa fa-code"></i>C#</strong></div>
@@ -907,7 +907,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Clément Delafargue</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#delafargue"><strong><i class="fa fa-user"></i>Clément Delafargue</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Scala</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
@@ -951,7 +951,7 @@
                               </ul>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Tomek Borek</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#borek"><strong><i class="fa fa-user"></i>Tomek Borek</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                             </div>
                           </article>
@@ -988,7 +988,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Roberto Aloi</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#aloi"><strong><i class="fa fa-user"></i>Roberto Aloi</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
                             </div>
@@ -1024,7 +1024,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Alfredo Di Napoli</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#dinapoli"><strong><i class="fa fa-user"></i>Alfredo Di Napoli</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
                             </div>
@@ -1061,7 +1061,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Federico Feroldi</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#feroldi"><strong><i class="fa fa-user"></i>Federico Feroldi</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Scala</strong></div>
                             </div>
@@ -1091,7 +1091,7 @@
                               Despite not being a pure functional language, Rust shows great potential in this area.
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Flavio Percoco</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#percoco"><strong><i class="fa fa-user"></i>Flavio Percoco</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Rust</strong></div>
                             </div>
@@ -1129,7 +1129,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Andrea Leopardi</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#leopardi"><strong><i class="fa fa-user"></i>Andrea Leopardi</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Elixir</strong></div>
                             </div>
@@ -1169,7 +1169,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#cui"><strong><i class="fa fa-user"></i>Yan Cui</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Elm</strong></div>
                             </div>
@@ -1206,7 +1206,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Vladimir Alekseichenko</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#alekseichenko"><strong><i class="fa fa-user"></i>Vladimir Alekseichenko</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Haskell</strong></div>
                             </div>
@@ -1243,7 +1243,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Quentin Adam</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#adam"><strong><i class="fa fa-user"></i>Quentin Adam</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Scala</strong></div>
                             </div>
@@ -1281,7 +1281,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Simone Busoli</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#busoli"><strong><i class="fa fa-user"></i>Simone Busoli</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>TypeScript</strong></div>
                             </div>
@@ -1320,7 +1320,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Michele Finelli</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#finelli"><strong><i class="fa fa-user"></i>Michele Finelli</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                             </div>
                           </article>
@@ -1358,7 +1358,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Marcin Kostrzewa</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#kostrzewa"><strong><i class="fa fa-user"></i>Marcin Kostrzewa</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                             </div>
                           </article>
@@ -1388,7 +1388,7 @@
                             <div>I will present how the OCaml language stretches the limits of type inference and generic polymorphism with polymorphic variant and the dual notion of extensible records. The former concisely solve, among others and with more guarantees, the expression problem often used to justify the supremacy of OOP. The latter provide persistent objects with user controlled late binding and a very flexible type system that is not based on subtyping and does not require dynamic casts.</div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Claudio Sacerdoti Coen</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#sacerdoti"><strong><i class="fa fa-user"></i>Claudio Sacerdoti Coen</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>OCaml</strong></div>
                             </div>
@@ -1422,7 +1422,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Luca Grulla</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#grulla"><strong><i class="fa fa-user"></i>Luca Grulla</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
                             </div>
@@ -1467,7 +1467,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Andrea Ferretti</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#ferretti"><strong><i class="fa fa-user"></i>Andrea Ferretti</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Factor</strong></div>
                             </div>
@@ -1516,7 +1516,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#zelazny"><strong><i class="fa fa-user"></i>Simon Zelazny</strong></a>
                                 <div><strong><i class="fa fa-star-o"></i>Beginner</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Erlang</strong></div>
                             </div>
@@ -1560,7 +1560,7 @@
                               </div>
                             </p>
                             <div class="session-info">
-                                <a href="#speakers"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
+                                <a class="speaker-link" href="#speakers" data-speaker-id="#stepien"><strong><i class="fa fa-user"></i>Jan Stępień</strong></a>
                                 <div><strong><i class="fa fa-star-half-o"></i>Intermediate</strong></div>
                                 <div><strong><i class="fa fa-code"></i>Clojure</strong></div>
                             </div>
@@ -1595,7 +1595,7 @@
           <div class="carousel">
             <div class="flexslider">
               <ul class="slides">
-                <li>
+                <li id="milewski">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/bartosz-milewski.jpg" class="img-responsive img-circle" alt="speaker Bartosz Milewski" />
                   </div>
@@ -1613,7 +1613,7 @@
                     <a href="http://bartoszmilewski.com"><span class="fa fa-globe"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="adam">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/quentin-adam.jpg" class="img-responsive img-circle" alt="speaker Quentin Adam" />
                   </div>
@@ -1628,7 +1628,7 @@
                     <a href="http://www.linkedin.com/in/waxzce"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="alekseichenko">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/vladimir-alekseichenko.jpg" class="img-responsive img-circle" alt="speaker Vladimir Alekseichenko" />
                   </div>
@@ -1643,7 +1643,7 @@
                     <a href="http://www.linkedin.com/in/vladimiralekseichenko"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="aloi">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/roberto-aloi.jpg" class="img-responsive img-circle" alt="speaker Roberto Aloi" />
                   </div>
@@ -1658,7 +1658,7 @@
                     <a href="http://linkedin.com/in/robertoaloi"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="borek">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/tomek-borek.jpg" class="img-responsive img-circle" alt="speaker Tomek Borek" />
                   </div>
@@ -1675,7 +1675,7 @@
                     <a href="http://www.linkedin.com/in/tjborek"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="busoli">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/simone-busoli.jpg" class="img-responsive img-circle" alt="speaker Simone Busoli" />
                   </div>
@@ -1689,7 +1689,7 @@
                     <a href="http://www.linkedin.com/in/simonebusoli"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="cui">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/yan-cui.jpg" class="img-responsive img-circle" alt="speaker Yan Cui" />
                   </div>
@@ -1705,7 +1705,7 @@
                     <a href="http://www.linkedin.com/in/theburningmonk"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="delafargue">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/clément-delafargue.jpg" class="img-responsive img-circle" alt="speaker Clément Delafargue" />
                   </div>
@@ -1720,7 +1720,7 @@
                     <a href="http://linkedin.com/in/cdelafargue"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="dinapoli">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/alfredo-di-napoli.jpg" class="img-responsive img-circle" alt="speaker Alfredo Di Napoli" />
                   </div>
@@ -1736,7 +1736,7 @@
                     <a href="http://www.linkedin.com/in/alfredodn"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="feroldi">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/federico-feroldi.jpg" class="img-responsive img-circle" alt="speaker Federico Feroldi" />
                   </div>
@@ -1750,7 +1750,7 @@
                     <a href="http://www.linkedin.com/in/feroldi"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="ferretti">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/andrea-ferretti.jpg" class="img-responsive img-circle" alt="speaker Andrea Ferretti" />
                   </div>
@@ -1765,7 +1765,7 @@
                     <a href="http://linkedin.com/in/ferrettiandrea"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="finelli">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/michele-finelli.jpg" class="img-responsive img-circle" alt="speaker Michele Finelli" />
                   </div>
@@ -1780,7 +1780,7 @@
                     <a href="http://www.linkedin.com/in/mfinelli"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="grulla">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/luca-grulla.jpg" class="img-responsive img-circle" alt="speaker Luca Grulla" />
                   </div>
@@ -1795,7 +1795,7 @@
                     <a href="http://www.linkedin.com/in/lucagrulla"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="kostrzewa">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/marcin-kostrzewa.jpg" class="img-responsive img-circle" alt="speaker Marcin Kostrzewa" />
                   </div>
@@ -1810,7 +1810,7 @@
                     <a href="http://www.linkedin.com/in/marcinkostrzewa"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="kubica">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/marek-kubica.jpg" class="img-responsive img-circle" alt="speaker Marek Kubica" />
                   </div>
@@ -1826,7 +1826,7 @@
                     <a href="http://www.linkedin.com/in/mkubica"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="leopardi">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/andrea-leopardi.jpg" class="img-responsive img-circle" alt="speaker Andrea Leopardi" />
                   </div>
@@ -1841,7 +1841,7 @@
                     <a href="http://linkedin.com/in/anleopardi"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="nash">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/joe-nash.jpg" class="img-responsive img-circle" alt="speaker Joe Nash" />
                   </div>
@@ -1857,7 +1857,7 @@
                     <a href="http://www.linkedin.com/in/joednash"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="newton">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/michael-newton.jpg" class="img-responsive img-circle" alt="speaker Michael Newton" />
                   </div>
@@ -1872,7 +1872,7 @@
                     <a href="http://linkedin.com/in/mavnn"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="sacerdoti">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/claudio-sacerdoti-coen.jpg" class="img-responsive img-circle" alt="speaker Claudio Sacerdoti Coen" />
                   </div>
@@ -1888,7 +1888,7 @@
                     <a href="http://www.linkedin.com"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="sholik">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/alexei-sholik.jpg" class="img-responsive img-circle" alt="speaker Alexei Sholik" />
                   </div>
@@ -1903,7 +1903,7 @@
                     <a href="http://www.linkedin.com"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="paolini">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/mahesh-paolini-subramanya.jpg" class="img-responsive img-circle" alt="speaker Mahesh Paolini-Subramanya" />
                   </div>
@@ -1918,7 +1918,7 @@
                     <a href="http://www.linkedin.com/in/dieswaytoofast"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="percoco">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/flavio-percoco.jpg" class="img-responsive img-circle" alt="speaker Flavio Percoco" />
                   </div>
@@ -1933,7 +1933,7 @@
                     <a href="http://linkedin.com/in/fpercoco"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="sasso">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/roberto-sasso.jpg" class="img-responsive img-circle" alt="speaker Roberto Sasso" />
                   </div>
@@ -1948,7 +1948,7 @@
                     <a href="http://linkedin.com/in/robertosasso"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="stepien">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/jan-stępień.jpg" class="img-responsive img-circle" alt="speaker Jan Stępień" />
                   </div>
@@ -1964,7 +1964,7 @@
                     <a href="http://www.linkedin.com/in/janstepien"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="terrell">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/riccardo-terrell.jpg" class="img-responsive img-circle" alt="speaker Riccardo Terrell" />
                   </div>
@@ -1980,7 +1980,7 @@
                     <a href="http://www.linkedin.com/in/riterrell/"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="videla">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/alvaro-videla.jpg" class="img-responsive img-circle" alt="speaker Alvaro Videla" />
                   </div>
@@ -1995,7 +1995,7 @@
                     <a href="http://www.linkedin.com/in/alvarovidela"><span class="fa fa-linkedin"></span></a>
                   </div>
                 </li>
-                <li>
+                <li id="zelazny">
                   <div class="img-wrapper">
                     <img src="assets/images/speakers/simon-zelazny.jpg" class="img-responsive img-circle" alt="speaker Simon Zelazny" />
                   </div>
