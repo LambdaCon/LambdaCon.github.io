@@ -51,8 +51,8 @@
             var speakerId = $(e.currentTarget).data('speakerId');
             var speakerIndex = flexSlider.find(speakerId).index() + 1;
             var speakersPerSlide = flexSliderObj.visible;
-            var speakerSlideIndex = Math.floor(speakerIndex / speakersPerSlide);
-            flexSliderObj.flexAnimate(speakerSlideIndex)
+            var speakerSlideIndex = Math.ceil(speakerIndex / speakersPerSlide);
+            flexSliderObj.flexAnimate(speakerSlideIndex - 1)
         });
 
         // fade in back-to-top
