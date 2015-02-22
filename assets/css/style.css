@@ -95,7 +95,9 @@ hr.white { border-color: #F3AE9B; }
 .eventbrite:hover { background: url('../images/icons/eventbrite-blue.png'); }
 .joindin { background: url('../images/icons/joindin-white.png'); }
 .joindin:hover { background: url('../images/icons/joindin-blue.png'); }
+.session-info .joindin { background: url('../images/icons/joindin-blue.png'); margin-right: 8px; position: relative; top: 5px; }
 .evtsiteico, .evtsiteico:hover { display: inline-block; width: 18px; height: 18px; background-repeat: no-repeat; overflow: hidden; }
+
 
 .icon { display: inline-block; background-repeat: no-repeat; overflow: hidden; }
 .icon-docs { background: url('../images/icons/icon-docs.png'); width: 90px; height: 90px; margin-right: 15px; }
