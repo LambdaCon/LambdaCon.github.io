@@ -126,7 +126,7 @@
 				panControl: false,
 				mapTypeControl: false,
 				streetViewControl: false,
-				center: new google.maps.LatLng(44.4883, 11.3205)
+				center: new google.maps.LatLng(44.491, 11.3125)
 			};
 
 			var map = new google.maps.Map(document.getElementById('canvas-map'),mapOptions);
