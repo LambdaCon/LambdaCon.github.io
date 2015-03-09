@@ -610,8 +610,8 @@ label.error { display: block; }
 
 #sponsors .list-inline { margin-bottom: 30px;}
 #sponsors .list-inline li { width: 30%; padding: 2%; margin-bottom: 30px; }
-#sponsors .list-inline li a.sponsor { position:relative; }
-#sponsors .list-inline li a.sponsor:after {
+#sponsors .list-inline li.sponsor { position:relative; }
+#sponsors .list-inline li.sponsor:after {
    position: relative;
    top: 20px;
    color:white;
@@ -621,19 +621,19 @@ label.error { display: block; }
    font-size: 0.8em;
    font-family: Verdana;
 }
-#sponsors .list-inline li a.sponsor.diamond:after {
+#sponsors .list-inline li.sponsor.diamond:after {
    content: "DIAMOND SPONSOR";
    background: #0ABAE9;
 }
-#sponsors .list-inline li a.sponsor.ruby:after {
+#sponsors .list-inline li.sponsor.ruby:after {
    content: "RUBY SPONSOR";
    background: #CC342D;
 }
-#sponsors .list-inline li a.sponsor.emerald:after {
+#sponsors .list-inline li.sponsor.emerald:after {
    content: "EMERALD SPONSOR";
    background: #5B9C64;
 }
-#sponsors .list-inline li a.sponsor.sapphire:after {
+#sponsors .list-inline li.sponsor.sapphire:after {
    content: "SAPPHIRE SPONSOR";
    background: #0F52BA;
 }
