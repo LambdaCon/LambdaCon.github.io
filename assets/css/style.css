@@ -146,7 +146,7 @@ hr.white { border-color: #F3AE9B; }
 .sticky-wrapper { margin-top: 0px; height: 90px; }
 
 .navigation { margin-left: -15px; margin-right: -15px; }
-.navigation-bar { margin: 0 auto; padding: 0; list-style: none; text-align: left; display: table; }
+.navigation-bar { margin: 0 auto; padding: 0; list-style: none; text-align: left; display: table;  }
 .navigation-bar-left { float: left; width: 100%;}
 .navigation-bar-right { float: right; }
 .navigation-bar:after { content: ''; clear: both; }
@@ -234,7 +234,7 @@ hr.white { border-color: #F3AE9B; }
 .nav-tabs-default .nav-tabs > .active>a,
 .nav-tabs-default .nav-tabs > .active>a:hover,
 .nav-tabs-default .nav-tabs > .active>a:focus  { border: none; }
-.nav-tabs-default > .nav-tabs > li > a { padding: 15px 45px !important; }
+.nav-tabs-default > .nav-tabs > li > a { padding: 15px 45px; }
 .nav-tabs-default > .nav-tabs.nav-justified > li > a { padding: 20px 15px !important; }
 .nav-tabs-default > .nav-tabs > li { /*border-right: 1px solid #ddd;*/ margin-bottom: 0; }
 .nav-tabs-default > .nav-tabs > li:last-child { border-right: none; }
@@ -443,6 +443,9 @@ input[type=checkbox] {margin: 4px 15px 0 0;-webkit-border-radius: 0;border-radiu
 
 label.error { display: block; }
 
+#schedule .nav-tabs.schedule-selection > li > a {
+  padding: 15px 45px;
+}
 #schedule .panel {
   position: relative;
   border: none;
@@ -788,12 +791,22 @@ label.error { display: block; }
 
 /* Mobile device */
 @media (max-width: 480px) {
+
+  h1 { font-size: 78px; }
+  h2 { font-size: 62px; }
+  h3 { font-size: 50px; }
+  h4 { font-size: 40px; }
+  h5 { font-size: 30px; }
+  h6 { font-size: 24px; }
+  h7,.h7 { font-size: 22px; }
+  h8,.h8 { font-size: 20px; }
+
   #hero hr { width: 70%; display: block; margin-top: 5px; margin-bottom: 5px; }
   #hero .btn-3d { margin: 0px 0px 15px 0px; }
   #hero .hero-small span { margin: 0 !important; }
   .navigation-social li a { padding-left: 12px; padding-right: 12px; }
-  #hero .hero-content { top: 57%; }
-  #hero .hero-big { font-size: 50px !important;  line-height: 70px; margin-top: 10px;}
+  #hero .hero-content { top: 30%; }
+  #hero .hero-big { font-size: 45px !important;  line-height: 70px; margin-top: 10px;}
   #hero .btn-3d { margin: 0px 0px 15px 0px; }
   .pricing-col { width: 100% !important; }
   #hero .hero-normal {font-size: 18pt; margin: 0px 0px 20px 0px;}
@@ -801,6 +814,21 @@ label.error { display: block; }
   .pricing-col { width: 100% !important; }
   .nav-tabs-simple .nav-tabs li a { font-size: 20px; padding: 0; }
   .nav-tabs-simple { margin-top:25px; }
+
+  #stat .stat {
+    font-size: 80px;
+  }
+  .counter hr{
+    display: none;
+  }
+
+  #schedule .nav-tabs li{width: 50%; float:left;}
+  #schedule .nav-tabs.schedule-selection >li > a{
+    padding :20px 15px;
+  }
+  #schedule .panel-group:after {left:50px;}
+  #schedule .panel {padding-left: 90px;}
+  #schedule .speaker-wrapper{left:25px;}
   #subscribe .btn {margin-top:25px;}
   #elements .btn {margin-top:10px;}
   .navigation.open a {z-index:1000; position:relative; display:block;}
@@ -827,7 +855,7 @@ label.error { display: block; }
   top: 0px; }
   #hero .btn-3d { margin: 0px 0px 15px 0px; }
   #hero .hero-big {
-  font-size: 80px;
+  font-size: 75px;
   text-transform: uppercase;
   line-height: 70px;
   margin-top: 10px;
@@ -867,11 +895,11 @@ label.error { display: block; }
     display: block;
   }
 
-  #mobileheader { position: fixed; width: 100%; display: block; z-index: 999; background: rgba(37, 37, 37, .9)}
+  #mobileheader { position: fixed; width: 100%; display: block; z-index: 999; background: rgba(37, 37, 37, .9);}
   #mobileheader .navigation-txt { position: absolute; width: 100%; text-align: center; font-size: 18px; line-height: 50px; cursor: pointer; }
-  #mobileheader .navigation-bar { height: 0; overflow: hidden; display: block; }
-  #mobileheader .open .navigation-bar { height: auto; float: none !important; clear: both; width: 100%; border-top: 2px solid #2da9ff; }
+  #mobileheader .navigation-bar { max-height: 0; overflow: hidden; display: block;border-top: 2px; transition: max-height 600ms, padding 600ms; }
   #mobileheader .open .navigation-bar:last-child { border-top:none; padding-top: 10px; padding-bottom: 30px; }
+  #mobileheader .open .navigation-bar { max-height: 100vh; float: none !important; clear: both; width: 100%; solid #2da9ff; }
   #mobileheader .navigation-bar li { padding-top: 2px; padding-bottom: 2px; display: block; text-align: center;}
 
   #hero { padding-top: 2%; }
